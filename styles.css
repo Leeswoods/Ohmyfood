@@ -1,0 +1,339 @@
+@charset "UTF-8";
+/* MIXINS RESTAURANTS CARDS */
+/* La propriété Flexbox => Disposition des Cards */
+/* La créaction des Cards => Background color, etc.. */
+/* Images des minis cards Restaurants */
+/* Bloc Nouveau vert en haut des images de restaurants */
+/* Titres (Paragrpahes) + Icon Coeur */
+/* COULEUR BOUTON GRADIENT */
+/* COULEUR ICON GRADIENT */
+/* FOOTER FLEX */
+/* FONTS TITRE + LOGO */
+/* FONTS TEXTES */
+/* Background Color  Localisation */
+/* Background Color  Reservation menu avec bouton */
+@font-face {
+  font-family: "shrikhand.regular";
+  src: url("Fonts/shrikhand.regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("Fonts/Roboto-Thin.ttf");
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  /* GENERAL */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Le containaire enfant ne peut pas partir du containaire parent */
+  }
+  html, body {
+    width: 100%; /* Largeur minimale de la fenêtre */
+    height: 100vh; /* Hauteur minimale de la fenêtre */
+  }
+  body {
+    min-height: 100%; /* hauteur minimale du container */
+    display: flex; /* Permet de mettre la propriété flexbox */
+    flex-direction: column; /* Permet de mettre toute les fenêtre en colonne */
+  }
+  /* HEADER */
+  .header__logo {
+    width: 50%; /* Largeur du logo */
+    height: 50%; /* Hauteur du logo */
+    margin-top: 30px; /* Marge en haut */
+    margin-left: 120px; /* Marge à gauche */
+  }
+  /* MAIN */
+  /* Localisation */
+  .middle-container a {
+    text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
+    color: black; /* Met le texte en noir */
+  }
+  .localisation-restaurant {
+    display: flex; /* Propriété Flexbox */
+    flex-direction: row; /* Met les éléments sur la même ligne */
+    justify-content: space-between; /* Espace entre les éléments */
+    background-color: #EAEAEA; /* Bakcground couleur */
+    margin-top: 5px; /* Marge en haut */
+    padding: 20px; /* Espace => taille du bloc */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+  }
+  .localisation-restaurant__icon {
+    padding-left: 120px; /* Espace en haut */
+    padding-top: 12px; /* Espace à gauche */
+  }
+  .localisation-restaurant__texte {
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+    font-size: 22px; /* Taille de la police d'écriture */
+    font-weight: bold; /* Met le texte en gras */
+    padding-right: 155px; /* Espace à droite */
+  }
+  /* Réservation menu */
+  .Réservation {
+    background-color: #F6F6F6; /* Bakcground couleur */
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+    width: 100%; /* Largueur du contenaire */
+    height: 300px; /* Longueur du contenaire */
+    padding-left: 60px; /* Espace à gauche */
+    padding-right: 60px; /* Espace à droite */
+    text-align: center; /* Met le bloc au cente */
+  }
+  .Réservation__titre {
+    padding-top: 30px; /* Espace entre le titre et le texte d'en haut */
+  }
+  .Réservation__texte {
+    padding-top: 20px; /* Espace en haut */
+    font-size: 20px; /* Taille du texte */
+  }
+  .Réservation__button-recherche {
+    padding-top: 20px; /* Espace entre le bouton et le texte d'en haut */
+  }
+  .button-recherche {
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); /* Bakcground couleur dégradé */
+    /* Mixins : Bakcground couleur dégradé */
+    color: white; /*Couleur du texte dans le bouton */
+    font-size: 18px; /* Taille du texte */
+    padding: 12px 12px; /* Espace entre le texte dans le bouton et les côtés du bouton */
+    width: 240px; /* Largeur du bouton */
+    height: 50px; /* Hauteur du bouton */
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+    font-weight: bold; /* Texte mit en gras */
+    border-top: rgba(255, 121, 218, 0.9); /* Couleur élément en haut */
+    border-bottom: rgba(147, 86, 220, 0.9); /* Couleur élément en bas */
+    border-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); /* Couleur de bordure dégradé */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+    border-radius: 30px; /* Bordure arrondie de 30 px */
+  }
+  /* Fonctionnement Menu */
+  .Container-Fonctionnement {
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+  }
+  .Container-Fonctionnement__titre {
+    padding-top: 40px; /* Espace en haut */
+    padding-left: 20px; /* Espace à gauche */
+    padding-bottom: 20px; /* Espace en bas */
+  }
+  .Container-Fonctionnement__card {
+    background-color: #F6F6F6; /* Bakcground couleur */
+    width: 400px; /* Largeur de la card */
+    height: 80px; /* Hauteur de la card */
+    margin-left: 50px; /* Marge à gauche */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+    border-radius: 30px; /* Bordure arrondie de 30 px */
+    margin-top: 20px; /* Marge en haut */
+  }
+  .Container-Fonctionnement__card:hover {
+    background-color: #F5EDFF; /* Background Couleur au passage de la souris */
+  }
+  .Container-Fonctionnement__card--body {
+    display: flex; /* Propriété Flexbox */
+    flex-direction: row; /* Permet de mettre les éléments en ligne */
+    justify-content: space-between; /* Permet d'espacer les éléments */
+    align-items: center; /* Permet de centrer les éléments */
+    padding-top: 30px; /* Espace en haut */
+  }
+  .Fonctionnement__Icon-numéro {
+    border: 2px solid #9356DC; /* Bordure de l'icone en grise */
+    color: white; /* Couleur de l'îcone */
+    font-size: 13px; /* Taille de la bordure */
+    background-color: #9356DC; /* Bakcground couleur */
+    border-radius: 25px; /* Bordure arrondie de l'icône  => ce qui permet de créer un cercle */
+    width: 25px; /* Largeur de la bordure entre l'icône et le cercle */
+    height: 25px; /* Hauteur de la bordure entre l'icône et le cerlce */
+    display: flex; /* Permet de donner la propriété flexbox */
+    justify-content: center; /* ce qui centre horizontalement l'icône dans la bulle en grise */
+    align-items: center; /* ce qui centrer verticalement l'icône dans la bulle en grise */
+    margin-left: -10px; /* Marge qui sépare l'icone du texte */
+  }
+  .Fonctionnement__Icon-logo {
+    margin-left: -20px; /* Marge à gauche */
+    color: gray; /* Couleur de l'îcone */
+  }
+  /* Lien Passage de la souris */
+  .Fonctionnement__Icon-logo i:hover {
+    color: #9356DC; /* Couleur de l'îcone au passage de la souris */
+  }
+  .Fonctionnement__texte-card {
+    padding-right: 80px; /* Espace à droite */
+    font-size: 20px; /* Taille du texte */
+    font-weight: bold; /* Met le texte en gras */
+  }
+  /* Fonctionnement Menu => Composition Card */
+  .Composition-texte-card {
+    padding-right: 95px; /* Espace à droite */
+  }
+  /* Fonctionnement Menu => Dégustation Card */
+  .Dégustation-texte-card {
+    padding-right: 90px; /* Espace à droite */
+  }
+  /* RESTAURANTS => CONTENAIRE */
+  .Restaurants {
+    background-color: #F6F6F6; /* Bakcground couleur */
+    width: 100%; /* Largeur du container */
+    height: 1700px; /* Hauteur du container */
+    margin-top: 80px; /* Marge en haut */
+  }
+  .Restaurants__titre {
+    padding-top: 50px; /* Espace en haut */
+    padding-left: 20px; /* Espece l'élément à gauche */
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+  }
+  /* RESTAURANTS => MINI CARDS */
+  .Restaurants__cards {
+    background-color: white; /* Couleur en arrière plan de la card */
+    border-radius: 15px; /* Bordure arrondie de la cards  */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    width: 100%; /* Largeur de la card */
+    height: 340px; /* Longueur de la card*/
+    margin-top: 30px; /* Marge en haut qui sépare le titre activités à Marseille de la card */
+    /* Mixins : La créaction des Cards => Background color, etc.. */
+  }
+  .Restaurants__cards a {
+    text-decoration: none; /* Enlève le tiret du lien */
+    color: black;
+  }
+  .Restaurants__mini-cards {
+    display: flex; /* Permet la propriété Flexbox */
+    flex-direction: column; /* Permet de mettre les éléments en colonne */
+    width: 100%; /* Largeur */
+    height: auto; /* Longueur */
+    padding-left: 15px; /* Permet de centre l'élément */
+    padding-right: 15px; /* Permet de centre l'élément */
+    /* Mixins : La propriété Flexbox => Disposition des Cards */
+  }
+  .Restaurants__cards-images {
+    width: 100%; /* Largeur de l'image' */
+    height: 253px; /* Longueur de l'image' */
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    border-top-left-radius: 15px; /* Bordure arrondie à gauche de l'image */
+    border-top-right-radius: 15px; /* Bordure arrondie à droite de l'image */
+    margin-top: 0px; /* Colle l'image côté haut */
+    /* Mixins : Images des minis cards Restaurants */
+  }
+  .Restaurants__cards__container-nouveau {
+    background-color: #99E2D0; /* Couleur en arrière plan de la card */
+    width: 100px; /* Largeur de l'élément */
+    height: 30px; /* Hauteur de l'élément */
+    margin-top: -240px; /* Marge en haut */
+    margin-left: 340px; /* Marge à gauche */
+    position: relative; /* Permet de mettre l'élément en position relative => parent */
+    /* Mixins : Bloc Nouveau vert en haut des images de restaurants */
+  }
+  .Restaurants__cards__container-nouveau p {
+    text-align: center; /* Centre le texte */
+    padding-top: 5px; /* Espace en haut */
+    color: #038567; /* Couleur de l'éléments */
+    font-weight: 800;
+    /* Mixins : Texte => Bloc Nouveau vert en haut des images de restaurants */
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+  }
+  /* CARDS Ménilmontant + Charonne */
+  .Restaurants__cards-body {
+    margin-top: 220px; /* Marge en haut */
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+    padding-left: 10px; /* Espece l'élément à gauche */
+    position: relative; /* Permet de mettre l'élément en position relative => parent */
+    /* Mixins : Body titres + texte */
+  }
+  .Restaurants__cards-body p {
+    padding-top: 10px; /* Met un espace entre le h3 et le p */
+    /* Mixins : Met un espace entre le h3 et le p */
+  }
+  .Restaurants__cards-body i {
+    font-size: 2rem; /* Taille de l'élément */
+    position: absolute; /* Permet de mettre l'élément en position absolute */
+    right: 1rem; /* Met l'élément à droite */
+    top: 50%; /* Met l'élément en haut à 50% */
+    transform: translateY(-50%); /* Permet de centre l'élément */
+    /* Mixins : Body icon */
+  }
+  /* CARDS Cité Rouge + Folie-Méricourt  */
+  .Restaurants__cards-body--modifier {
+    padding-top: 10px; /* Espace en haut */
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+    padding-left: 10px; /* Espece l'élément à gauche */
+    position: relative; /* Permet de mettre l'élément en position relative => parent */
+    /* Mixins : Body titres + texte */
+  }
+  .Restaurants__cards-body--modifier p {
+    padding-top: 10px; /* Met un espace entre le h3 et le p */
+    /* Mixins : Met un espace entre le h3 et le p */
+  }
+  .Restaurants__cards-body--modifier i {
+    font-size: 2rem; /* Taille de l'élément */
+    position: absolute; /* Permet de mettre l'élément en position absolute */
+    right: 1rem; /* Met l'élément à droite */
+    top: 50%; /* Met l'élément en haut à 50% */
+    transform: translateY(-50%); /* Permet de centre l'élément */
+    /* Mixins : Body icon */
+  }
+  /* COEUR CARD ICON COEUR TRANSITION */
+  .fas {
+    color: transparent;
+    background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218)); /* Bakcground couleur dégradé */
+    /* Mixins : Bakcground couleur dégradé */
+    background-clip: text; /* Définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu. */
+    -webkit-background-clip: text; /* Si background clip ne marche pas */
+    opacity: 0; /* Permet de pas voir la couleur */
+    transition: all 200ms ease-in-out; /* */
+  }
+  .Restaurants__cards-body:hover .fas {
+    opacity: 1; /* Permet de voir la couleur */
+  }
+  .Restaurants__cards-body--modifier:hover .fas {
+    opacity: 1; /* Permet de voir la couleur */
+  }
+  /* FOOTER */
+  .footer {
+    background-color: #353535; /* Couleur de l'arrière plan du footer*/
+    width: 100%; /* Largeur de l'arrière plan */
+    height: 260px; /* Hauteur de l'arrière plan */
+    padding: 30px; /* Met au milieu les listes */
+    display: flex; /* Permet la propriété flexbox */
+    flex-direction: column; /* Met les éléments en colonne */
+  }
+  .footer__titre {
+    color: white; /* Couleur Blanche */
+    font-family: "shrikhand.regular"; /* Police d'écriture */
+    padding-bottom: 20px; /* Espace en bas */
+  }
+  .Footer__restaurant {
+    display: flex; /* Propriété flexbox */
+    flex-direction: row; /* Met les éléments en ligne */
+    /* Mixins : Propriété flexbox + Met les éléments en ligne */
+  }
+  .Footer__icon-texte {
+    padding-left: 10px; /* Espace à gauche */
+    /* Mixins : Espace à gauche */
+  }
+  .Footer__icon-texte--modifier {
+    padding-left: 5px; /* Espace à gauche */
+    /* Mixins : Espace à gauche */
+  }
+  .Footer__partenaire {
+    display: flex; /* Propriété flexbox */
+    flex-direction: row; /* Met les éléments en ligne */
+    /* Mixins : Propriété flexbox + Met les éléments en ligne */
+  }
+  footer ul {
+    width: 100%; /* Largeur des listes : permet de les rapprocher ensemble tout en laissant un espace */
+    font-size: 18px; /* Tailel d'écriture de la liste */
+    font-family: "Roboto-Thin"; /* FONTS TEXTES */
+    color: white; /* Couleur Blanche */
+  }
+  footer li {
+    margin-bottom: 16px; /* Sépare les listes entre elles */
+    list-style-type: none; /* Enlève les points */
+  }
+  footer li a {
+    text-decoration: none; /* Enlève l'aspect lien */
+    color: white; /* Couleur Blanche */
+  }
+  .titre-footer {
+    font-weight: bold; /* Permet de mettre les titres en gras */
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
