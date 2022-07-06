@@ -8,10 +8,79 @@
 /* COULEUR BOUTON GRADIENT */
 /* COULEUR ICON GRADIENT */
 /* FOOTER FLEX */
+/* MENU PAGE RESTAURANTS */
+/* COEUR ICON A COTER DU TITRE */
 /* FONTS TITRE + LOGO */
 /* FONTS TEXTES */
 /* Background Color  Localisation */
 /* Background Color  Reservation menu avec bouton */
+/* Page Mobile Menu à la française */
+@media screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Le containaire enfant ne peut pas partir du containaire parent */
+  }
+  /* HEADER */
+  /* Logo + Icon */
+  .header__logo--menu-restaurants {
+    width: 50%; /* Largeur du logo */
+    height: 50%; /* Hauteur du logo */
+    margin-top: 30px; /* Marge en haut */
+    margin-left: 120px; /* Marge à gauche */
+    position: relative;
+  }
+  .fa-arrow-left {
+    position: absolute;
+    left: 20px;
+    top: 50px; /* Marge en haut */
+    color: black;
+  }
+  /* MAIN */
+  /* Image de fond */
+  .main__background-image {
+    padding-top: 10px;
+  }
+  .background-image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    position: relative;
+  }
+  /* Container => menu / la carte */
+  .main__container-menu {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 360px;
+    border-top-left-radius: 50px; /* Bordure arrondie à gauche de l'image */
+    border-top-right-radius: 50px; /* Bordure arrondie à droite de l'image */
+  }
+  /* Titre + icon menu */
+  .main__titre-icon-menu {
+    padding: 30px;
+    position: relative;
+  }
+  .main__titre-icon-menu h1 {
+    font-family: "shrikhand.regular"; /* FONTS TITRE + LOGO */
+    font-weight: 100;
+  }
+  .main__titre-icon-menu--coeur i {
+    font-size: 2rem; /* Taille de l'élément */
+    position: absolute; /* Permet de mettre l'élément en position absolute */
+    right: 3rem; /* Met l'élément à droite */
+    top: 49%; /* Met l'élément en haut à 49% */
+    transform: translateY(-49%); /* Permet de centre l'élément */
+    /* Mixins : ICON COEUR PAGE MENU */
+  }
+  .main__titre-icon-menu:hover .fas {
+    opacity: 1; /* Permet de voir la couleur */
+  }
+  .color-icon-restaurant {
+    color: black;
+  }
+}
 @font-face {
   font-family: "shrikhand.regular";
   src: url("Fonts/shrikhand.regular.ttf");

@@ -83,3 +83,17 @@
 @mixin Footer__icon-texte--modifier{
     padding-left: 5px; /* Espace à gauche */
 }
+
+
+
+
+        /* MENU PAGE RESTAURANTS */
+
+/* COEUR ICON A COTER DU TITRE */
+@mixin card-coeur-restaurants {
+    font-size: 2rem; /* Taille de l'élément */
+    position: absolute; /* Permet de mettre l'élément en position absolute */
+    right: 3rem; /* Met l'élément à droite */
+    top: 49%; /* Met l'élément en haut à 49% */
+    transform: translateY(-49%); /* Permet de centre l'élément */
+}

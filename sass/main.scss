@@ -1,5 +1,6 @@
 @use "utils/mixins" as *;
 @use "utils/variables" as *;
+@use "Menu_à_la_française" as *;
 
 @font-face{
     font-family:"shrikhand.regular";
@@ -289,4 +290,6 @@
     .titre-footer{ 
         font-weight: bold; /* Permet de mettre les titres en gras */
     }
+
+
 }
