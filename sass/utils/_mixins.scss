@@ -97,3 +97,10 @@
     top: 49%; /* Met l'élément en haut à 49% */
     transform: translateY(-49%); /* Permet de centre l'élément */
 }
+
+
+/* ENTRÉE/PLAT/DESSERT : TITRE H3   */
+@mixin titre-menu-restaurants {
+    padding-top: 10px;
+}
+

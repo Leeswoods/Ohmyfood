@@ -40,10 +40,10 @@
         position: relative;
     }
     /* Container => menu / la carte */
-    .main__container-menu{
-        background-color: white;
+    .main__container{
+        background-color: $background-grey-clair;
         width: 100%;
-        height: 100px;
+        height: 100%;
         position: absolute;
         top: 360px;
         border-top-left-radius: 50px; /* Bordure arrondie à gauche de l'image */
@@ -51,21 +51,65 @@
     }
 
     /* Titre + icon menu */
-    .main__titre-icon-menu{
+    .main__titre-icon{
         padding: 30px;
         position: relative;
     }
-    .main__titre-icon-menu h1{
+    .main__titre-icon h1{
         font-family: $fonts-title ;/* FONTS TITRE + LOGO */
         font-weight: 100;
     }
-    .main__titre-icon-menu--coeur i{
+    .main__titre-icon--coeur i{
         @include card-coeur-restaurants (); /* Mixins : ICON COEUR PAGE MENU */
     }
-    .main__titre-icon-menu:hover .fas{
+    .main__titre-icon:hover .fas{
         opacity: 1; /* Permet de voir la couleur */
     }
     .color-icon-restaurant{
         color: black;
+    }
+
+    /* ENTRÉE/PLAT/DESSERT : TITRE + BARRE VERTE  */
+    .main__menu{
+        font-family: $fonts-text;
+        background-color: $background-grey-clair;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+    .main__menu-titre{
+        text-transform: uppercase; /* tous les caractères seront écrits en capitales */
+        font-weight: 400; /* Nuance de gras */
+        position: relative;
+            /* Barre verte en dessous du Entrée/Plat/Dessert */
+        &::after{
+            content: "";
+            height: 3px;
+            width: 47px;
+            background-color: $couleur-tertiaire;
+            position: absolute;
+            top: 28px;
+            left: 0px;
+        }
+    }
+    /* CARDS + ANIMATIONS */
+    .main__menu-cards{
+        background-color: white;
+        height: 80px;
+        margin-top: 30px;
+        display: flex;
+        margin-right: 20px;
+    }
+    .main__menu-cards--titre{
+        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .main__menu-cards--description{
+        padding-left: 10px;
+    }
+    .main__menu-cards--prix{
+        margin-left: auto;
+        padding-top: 45px;
+        padding-right: 25px;
     }
 }

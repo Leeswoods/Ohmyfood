@@ -10,10 +10,12 @@
 /* FOOTER FLEX */
 /* MENU PAGE RESTAURANTS */
 /* COEUR ICON A COTER DU TITRE */
+/* ENTRÉE/PLAT/DESSERT : TITRE H3   */
 /* FONTS TITRE + LOGO */
 /* FONTS TEXTES */
 /* Background Color  Localisation */
 /* Background Color  Reservation menu avec bouton */
+/* COULEUR TERTIAIRE VERT */
 /* Page Mobile Menu à la française */
 @media screen and (max-width: 768px) {
   * {
@@ -48,25 +50,25 @@
     position: relative;
   }
   /* Container => menu / la carte */
-  .main__container-menu {
-    background-color: white;
+  .main__container {
+    background-color: #F6F6F6;
     width: 100%;
-    height: 100px;
+    height: 100%;
     position: absolute;
     top: 360px;
     border-top-left-radius: 50px; /* Bordure arrondie à gauche de l'image */
     border-top-right-radius: 50px; /* Bordure arrondie à droite de l'image */
   }
   /* Titre + icon menu */
-  .main__titre-icon-menu {
+  .main__titre-icon {
     padding: 30px;
     position: relative;
   }
-  .main__titre-icon-menu h1 {
+  .main__titre-icon h1 {
     font-family: "shrikhand.regular"; /* FONTS TITRE + LOGO */
     font-weight: 100;
   }
-  .main__titre-icon-menu--coeur i {
+  .main__titre-icon--coeur i {
     font-size: 2rem; /* Taille de l'élément */
     position: absolute; /* Permet de mettre l'élément en position absolute */
     right: 3rem; /* Met l'élément à droite */
@@ -74,11 +76,54 @@
     transform: translateY(-49%); /* Permet de centre l'élément */
     /* Mixins : ICON COEUR PAGE MENU */
   }
-  .main__titre-icon-menu:hover .fas {
+  .main__titre-icon:hover .fas {
     opacity: 1; /* Permet de voir la couleur */
   }
   .color-icon-restaurant {
     color: black;
+  }
+  /* ENTRÉE/PLAT/DESSERT : TITRE + BARRE VERTE  */
+  .main__menu {
+    font-family: "Roboto-Thin";
+    background-color: #F6F6F6;
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+  .main__menu-titre {
+    text-transform: uppercase; /* tous les caractères seront écrits en capitales */
+    font-weight: 400; /* Nuance de gras */
+    position: relative;
+    /* Barre verte en dessous du Entrée/Plat/Dessert */
+  }
+  .main__menu-titre::after {
+    content: "";
+    height: 3px;
+    width: 47px;
+    background-color: #99E2D0;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+  }
+  /* CARDS + ANIMATIONS */
+  .main__menu-cards {
+    background-color: white;
+    height: 80px;
+    margin-top: 30px;
+    display: flex;
+    margin-right: 20px;
+  }
+  .main__menu-cards--titre {
+    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+  .main__menu-cards--description {
+    padding-left: 10px;
+  }
+  .main__menu-cards--prix {
+    margin-left: auto;
+    padding-top: 45px;
+    padding-right: 25px;
   }
 }
 @font-face {
