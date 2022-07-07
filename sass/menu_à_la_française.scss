@@ -77,6 +77,10 @@
         padding-top: 40px;
         padding-left: 30px;
     }
+    .main__menu a{
+        text-decoration: none;
+        color: black;
+    }
     .main__menu-titre{
         text-transform: uppercase; /* tous les caractères seront écrits en capitales */
         font-weight: 400; /* Nuance de gras */
@@ -126,9 +130,23 @@
         width: 4rem; /* Même largeur que le margin-right car sinon sa casse le container prix */
         border-radius: 0 20px 20px 0; /* Permet d'arrondir les bord en haut à droite et en bas à droite*/
         transition: margin-right 0.5s; /* Permet de rendre l'animation moins brute et permet un temps d'attente */
+        display: grid; /* Permet la propriété Grid */
+        place-items: center; /* L'élément est centré le long de l'axe correspondant */
     }
         /* PERMET L'ANIMATION DU CONTAINER CHECK */
     .main__menu-cards:hover .main__menu-cards--animations{
         margin-right: 0; /* Met l'élément dans la card et le rend visible */
+    }
+    .main__menu-cards--animations-icon{
+        border: 2px solid white; /* Bordure de l'icone en grise */
+        background-color: white;
+        border-radius: 25px; /* Bordure arrondie de l'icône  => ce qui permet de créer un cercle */
+        width: 25px; /* Largeur de la bordure entre l'icône et le cercle */
+        height: 25px; /* Hauteur de la bordure entre l'icône et le cerlce */
+        display: grid; /* Permet la propriété Grid */
+        place-items: center; /* L'élément est centré le long de l'axe correspondant */
+    }
+    .fa-check{
+        color: $couleur-tertiaire;
     }
 }
