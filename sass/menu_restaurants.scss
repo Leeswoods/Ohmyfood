@@ -1,6 +1,18 @@
 @use "utils/mixins" as *;
 @use "utils/variables" as *;
 
+@keyframes animation-menu {
+    /* Quand sa commence */
+    0%{
+        transform: rotate(-270deg); /* La rotation */
+    }
+    /* Quand sa fini */
+    100%{
+        transform: rotate(0); /* La rotation */
+    }
+
+}
+
 
 /* Page Mobile Menu à la française */
 @media screen and (max-width: 768px) {
@@ -139,6 +151,9 @@
         /* PERMET L'ANIMATION DU CONTAINER CHECK */
     .main__menu-cards:hover .main__menu-cards--animations{
         margin-right: 0; /* Met l'élément dans la card et le rend visible */
+    }
+    .main__menu-cards:hover i{
+        animation: animation-menu 0.5s ease-in-out;
     }
     .main__menu-cards--animations-icon{
         border: 2px solid white; /* Bordure de l'icone en grise */
