@@ -101,8 +101,8 @@
         background-color: white;
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
-        height: 80px;
-        margin-top: 30px;
+        height: 75px;
+        margin-top: 20px;
         display: flex;
         margin-right: 20px;
         overflow: hidden; /* Permet de cacher => fait disparaître le container check */
@@ -110,7 +110,7 @@
     .main__menu-cards--titre{
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 20px;
+        padding-top: 15px;
         padding-bottom: 5px;
     }
     .main__menu-cards--description{
