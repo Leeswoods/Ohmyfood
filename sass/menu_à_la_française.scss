@@ -43,7 +43,7 @@
     .main__container{
         background-color: $background-grey-clair;
         width: 100%;
-        height: 100%;
+        height: auto;
         position: absolute;
         top: 350px;
         border-top-left-radius: 50px; /* Bordure arrondie à gauche de l'image */
@@ -74,6 +74,8 @@
     .main__menu{
         font-family: $fonts-text;
         background-color: $background-grey-clair;
+        width: 100%;
+        height: auto;
         padding-top: 40px;
         padding-left: 30px;
     }
@@ -149,4 +151,74 @@
     .fa-check{
         color: $couleur-tertiaire;
     }
+
+    /* BOUTON COMMENCER */
+    .button-commander-design{
+        padding-top: 50px;
+        padding-bottom: 130px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .button-commander{
+        @include gradient-bouton (); /* Mixins : Bakcground couleur dégradé */
+        color: white; /*Couleur du texte dans le bouton */
+        font-size: 18px; /* Taille du texte */
+        padding: 12px 12px; /* Espace entre le texte dans le bouton et les côtés du bouton */
+        width: 240px; /* Largeur du bouton */
+        height: 50px; /* Hauteur du bouton */
+        font-family: $fonts-text; /* Police d'écriture */
+        font-weight: bold; /* Texte mit en gras */
+        border-top: rgba(255, 121, 218, 0.9); /* Couleur élément en haut */
+        border-bottom: rgba(147, 86, 220, 0.9); /* Couleur élément en bas */
+        border-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); /* Couleur de bordure dégradé */
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+        border-radius: 30px ; /* Bordure arrondie de 30 px */
+    }
+    
+    /* FOOTER */
+    .footer--page-menu{
+        position: relative;
+        top: 80rem;
+        background-color: #353535; /* Couleur de l'arrière plan du footer*/
+        width: 100%; /* Largeur de l'arrière plan */
+        height: 260px; /* Hauteur de l'arrière plan */
+        padding: 30px; /* Met au milieu les listes */
+        display: flex; /* Permet la propriété flexbox */
+        flex-direction: column; /* Met les éléments en colonne */
+    }
+    .footer__titre{
+        color: white; /* Couleur Blanche */
+        font-family: $fonts-title; /* Police d'écriture */
+        padding-bottom: 20px; /* Espace en bas */
+    }
+    .Footer__restaurant{
+        @include footer_flex (); /* Mixins : Propriété flexbox + Met les éléments en ligne */
+    }
+    .Footer__icon-texte{
+        @include Footer__icon-texte (); /* Mixins : Espace à gauche */
+    }
+    .Footer__icon-texte--modifier{
+        @include Footer__icon-texte--modifier (); /* Mixins : Espace à gauche */
+    }
+    .Footer__partenaire{
+        @include footer_flex (); /* Mixins : Propriété flexbox + Met les éléments en ligne */
+    }
+    footer ul{
+        width: 100%; /* Largeur des listes : permet de les rapprocher ensemble tout en laissant un espace */
+        font-size: 18px; /* Tailel d'écriture de la liste */
+        font-family : $fonts-text; /* FONTS TEXTES */
+        color: white; /* Couleur Blanche */
+    }
+    footer li{
+        margin-bottom: 16px; /* Sépare les listes entre elles */
+        list-style-type: none; /* Enlève les points */
+    } 
+    footer li a{
+        text-decoration: none; /* Enlève l'aspect lien */
+        color: white; /* Couleur Blanche */
+    } 
+    .titre-footer{ 
+        font-weight: bold; /* Permet de mettre les titres en gras */
+    }
+
 }
