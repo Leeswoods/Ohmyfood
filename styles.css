@@ -107,23 +107,21 @@
   /* CARDS + ANIMATIONS */
   .main__menu-cards {
     background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     height: 80px;
     margin-top: 30px;
     display: flex;
     margin-right: 20px;
+    align-items: center;
+    padding: 20px;
   }
   .main__menu-cards--titre {
     padding-bottom: 10px;
-    padding-top: 15px;
-    padding-left: 10px;
-  }
-  .main__menu-cards--description {
-    padding-left: 10px;
   }
   .main__menu-cards--prix {
     margin-left: auto;
-    padding-top: 45px;
-    padding-right: 25px;
+    font-weight: 900;
   }
 }
 @font-face {
