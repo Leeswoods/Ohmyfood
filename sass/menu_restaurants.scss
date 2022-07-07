@@ -121,6 +121,8 @@
         display: flex; /* Propriété flexbox */
         margin-right: 20px; /* Marge à droite */
         overflow: hidden; /* Permet de cacher => fait disparaître le container check */
+        text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
+        white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
     }
     .main__menu-cards--titre{
         padding-left: 20px; /* Epace à gauche */
@@ -129,8 +131,19 @@
         padding-bottom: 5px; /* Epace en bas */
     }
     .main__menu-cards--description{
+        font-size: 16px; /* Taille d'écriture */
         padding-left: 20px; /* Epace à gauche */
         padding-right: 20px; /* Epace à droite */
+    }
+    .menu-cards__titre-description{
+        overflow: hidden; /* Permet de cacher => fait disparaître le container check */
+        text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
+        white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
+    }
+    p, h3{
+        overflow: hidden; /* Permet de cacher => fait disparaître le container check */
+        text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
+        white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
     }
     .main__menu-cards--prix{
         margin-left: auto; /* Met l'éléments tout à gauche */
@@ -141,8 +154,8 @@
     }
     .main__menu-cards--animations{
         background-color: $couleur-tertiaire;  /* Couleur verte */
-        margin-right: -4rem; /* Permet de sortir l'élément/container check de la card */
-        width: 4rem; /* Même largeur que le margin-right car sinon sa casse le container prix */
+        margin-right: -5rem; /* Permet de sortir l'élément/container check de la card */
+        width: 5rem; /* Même largeur que le margin-right car sinon sa casse le container prix */
         border-radius: 0 20px 20px 0; /* Permet d'arrondir les bord en haut à droite et en bas à droite*/
         transition: margin-right 0.5s; /* Permet de rendre l'animation moins brute et permet un temps d'attente */
         display: grid; /* Permet la propriété Grid */
@@ -152,6 +165,7 @@
     .main__menu-cards:hover .main__menu-cards--animations{
         margin-right: 0; /* Met l'élément dans la card et le rend visible */
     }
+    /* PERMET L'ANIMATION DE LA FLEHCE DANS LE CONTAINER CHECK */
     .main__menu-cards:hover i{
         animation: animation-menu 0.5s ease-in-out;
     }

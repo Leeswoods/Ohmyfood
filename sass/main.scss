@@ -1,7 +1,6 @@
 @use "utils/mixins" as *;
 @use "utils/variables" as *;
-@use "Menu_à_la_française" as *;
-@use "Menu_la_note_enchantée" as *;
+@use "menu_restaurants" as *;
 @font-face{
     font-family:"shrikhand.regular";
     src:url("Fonts/shrikhand.regular.ttf");
