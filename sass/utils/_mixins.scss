@@ -97,6 +97,12 @@
     top: 49%; /* Met l'élément en haut à 49% */
     transform: translateY(-49%); /* Permet de centre l'élément */
 }
+/* PADDING ICON COEUR + TITRE */
+@mixin Titre-icon-menu {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
 
 
 /* ENTRÉE/PLAT/DESSERT : TITRE H3   */

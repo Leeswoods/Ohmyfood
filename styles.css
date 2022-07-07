@@ -10,6 +10,7 @@
 /* FOOTER FLEX */
 /* MENU PAGE RESTAURANTS */
 /* COEUR ICON A COTER DU TITRE */
+/* PADDING ICON COEUR + TITRE */
 /* ENTRÉE/PLAT/DESSERT : TITRE H3   */
 /* FONTS TITRE + LOGO */
 /* FONTS TEXTES */
@@ -55,13 +56,16 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 360px;
+    top: 350px;
     border-top-left-radius: 50px; /* Bordure arrondie à gauche de l'image */
     border-top-right-radius: 50px; /* Bordure arrondie à droite de l'image */
   }
   /* Titre + icon menu */
   .main__titre-icon {
-    padding: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    /* Mixins : PADDING ICON COEUR + TITRE */
     position: relative;
   }
   .main__titre-icon h1 {
@@ -75,6 +79,10 @@
     top: 49%; /* Met l'élément en haut à 49% */
     transform: translateY(-49%); /* Permet de centre l'élément */
     /* Mixins : ICON COEUR PAGE MENU */
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    /* Mixins : PADDING ICON COEUR + TITRE */
   }
   .main__titre-icon:hover .fas {
     opacity: 1; /* Permet de voir la couleur */
@@ -86,7 +94,7 @@
   .main__menu {
     font-family: "Roboto-Thin";
     background-color: #F6F6F6;
-    padding-top: 10px;
+    padding-top: 40px;
     padding-left: 30px;
   }
   .main__menu-titre {
@@ -113,16 +121,35 @@
     margin-top: 30px;
     display: flex;
     margin-right: 20px;
-    align-items: center;
-    padding: 20px;
+    overflow: hidden; /* Permet de cacher => fait disparaître le container check */
   }
   .main__menu-cards--titre {
-    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  .main__menu-cards--description {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .main__menu-cards--prix {
     margin-left: auto;
     font-weight: 900;
-    padding-top: 30px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .main__menu-cards--animations {
+    background-color: #99E2D0;
+    margin-right: -4rem; /* Permet de sortir l'élément/container check de la card */
+    width: 4rem; /* Même largeur que le margin-right car sinon sa casse le container prix */
+    border-radius: 0 20px 20px 0; /* Permet d'arrondir les bord en haut à droite et en bas à droite*/
+    transition: margin-right 0.5s; /* Permet de rendre l'animation moins brute et permet un temps d'attente */
+  }
+  /* PERMET L'ANIMATION DU CONTAINER CHECK */
+  .main__menu-cards:hover .main__menu-cards--animations {
+    margin-right: 0; /* Met l'élément dans la card et le rend visible */
   }
 }
 @font-face {
