@@ -31,32 +31,32 @@
     height: 50%; /* Hauteur du logo */
     margin-top: 30px; /* Marge en haut */
     margin-left: 120px; /* Marge à gauche */
-    position: relative;
+    position: relative; /* Permet de mettre en Position relative => parent*/
   }
   .fa-arrow-left {
-    position: absolute;
-    left: 20px;
+    position: absolute; /* Permet de mettre en Position absolute => enfant */
+    left: 20px; /* Marge à gauche */
     top: 50px; /* Marge en haut */
-    color: black;
+    color: black; /* Couleur */
   }
   /* MAIN */
   /* Image de fond */
   .main__background-image {
-    padding-top: 10px;
+    padding-top: 10px; /* Epace en haut */
   }
   .background-image {
-    width: 100%;
-    height: 50%;
+    width: 100%; /* Largeur de l'élément */
+    height: 50%; /* Hauteur de l'élément */
     object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
-    position: relative;
+    position: relative; /* Permet de mettre en Position relative => parent*/
   }
   /* Container => menu / la carte */
   .main__container {
-    background-color: #F6F6F6;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 350px;
+    background-color: #F6F6F6; /* Couleur d'arrière plan */
+    width: 100%; /* Largeur de l'élément */
+    height: auto; /* Hauteur de l'élément */
+    position: absolute; /* Permet de mettre en Position absolute => enfant */
+    top: 350px; /* Déplace l'élément en haut */
     border-top-left-radius: 50px; /* Bordure arrondie à gauche de l'image */
     border-top-right-radius: 50px; /* Bordure arrondie à droite de l'image */
   }
@@ -66,11 +66,11 @@
     padding-left: 30px;
     padding-top: 30px;
     /* Mixins : PADDING ICON COEUR + TITRE */
-    position: relative;
+    position: relative; /* Permet de mettre en Position relative => parent*/
   }
   .main__titre-icon h1 {
     font-family: "shrikhand.regular"; /* FONTS TITRE + LOGO */
-    font-weight: 100;
+    font-weight: 100; /* Nuance de gras */
   }
   .main__titre-icon--coeur i {
     font-size: 2rem; /* Taille de l'élément */
@@ -88,66 +88,67 @@
     opacity: 1; /* Permet de voir la couleur */
   }
   .color-icon-restaurant {
-    color: black;
+    color: black; /* Couleur */
   }
   /* ENTRÉE/PLAT/DESSERT : TITRE + BARRE VERTE  */
   .main__menu {
-    font-family: "Roboto-Thin";
-    background-color: #F6F6F6;
-    width: 100%;
-    height: auto;
-    padding-top: 40px;
-    padding-left: 30px;
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+    background-color: #F6F6F6; /* Couleur d'arrière plan */
+    width: 100%; /* Largeur de l'élément */
+    height: auto; /* Hauteur de l'élément */
+    padding-top: 40px; /* Epace en haut */
+    padding-left: 30px; /* Epace à gauche */
   }
   .main__menu a {
-    text-decoration: none;
-    color: black;
+    text-decoration: none; /* Fait disparaître l'aspect lien (la barre bleu) */
+    color: black; /* Couleur */
   }
   .main__menu-titre {
     text-transform: uppercase; /* tous les caractères seront écrits en capitales */
     font-weight: 400; /* Nuance de gras */
-    position: relative;
+    position: relative; /* Permet de mettre en Position relative => parent*/
     /* Barre verte en dessous du Entrée/Plat/Dessert */
+    /* ::after crée un pseudo-élément qui sera le dernier enfant de l'élément sélectionné */
   }
   .main__menu-titre::after {
-    content: "";
-    height: 3px;
-    width: 47px;
-    background-color: #99E2D0;
-    position: absolute;
-    top: 28px;
-    left: 0px;
+    content: ""; /* La propriété CSS content remplace un élément avec une valeur générée */
+    height: 3px; /* Hauteur de l'élément */
+    width: 47px; /* Largueur de l'élément */
+    background-color: #99E2D0; /* Couleur verte */
+    position: absolute; /* Permet de mettre en Position absolute => enfant */
+    top: 28px; /* Déplace l'élément en haut */
+    left: 0px; /* Déplace l'élément à gauche */
   }
   /* CARDS + ANIMATIONS */
   .main__menu-cards {
-    background-color: white;
-    border-radius: 20px;
+    background-color: white; /* Couleur d'arrière plan */
+    border-radius: 20px; /* Permet de mettre une bordure */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
-    height: 75px;
-    margin-top: 20px;
-    display: flex;
-    margin-right: 20px;
+    height: 75px; /* Hauteur de l'élément */
+    margin-top: 20px; /* Marge à gauche */
+    display: flex; /* Propriété flexbox */
+    margin-right: 20px; /* Marge à droite */
     overflow: hidden; /* Permet de cacher => fait disparaître le container check */
   }
   .main__menu-cards--titre {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
-    padding-bottom: 5px;
+    padding-left: 20px; /* Epace à gauche */
+    padding-right: 20px; /* Epace à droite */
+    padding-top: 15px; /* Epace en haut */
+    padding-bottom: 5px; /* Epace en bas */
   }
   .main__menu-cards--description {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px; /* Epace à gauche */
+    padding-right: 20px; /* Epace à droite */
   }
   .main__menu-cards--prix {
-    margin-left: auto;
-    font-weight: 900;
-    padding: 15px 20px;
-    display: flex;
-    align-items: flex-end;
+    margin-left: auto; /* Met l'éléments tout à gauche */
+    font-weight: 900; /* Nuance de gras */
+    padding: 15px 20px; /* Espace en haut et en bas. Puis à droite et à gauche */
+    display: flex; /* Permet la propriété Flexbox */
+    align-items: flex-end; /* Met l'élément à la fin */
   }
   .main__menu-cards--animations {
-    background-color: #99E2D0;
+    background-color: #99E2D0; /* Couleur verte */
     margin-right: -4rem; /* Permet de sortir l'élément/container check de la card */
     width: 4rem; /* Même largeur que le margin-right car sinon sa casse le container prix */
     border-radius: 0 20px 20px 0; /* Permet d'arrondir les bord en haut à droite et en bas à droite*/
@@ -161,7 +162,7 @@
   }
   .main__menu-cards--animations-icon {
     border: 2px solid white; /* Bordure de l'icone en grise */
-    background-color: white;
+    background-color: white; /* Couleur arrière plan */
     border-radius: 25px; /* Bordure arrondie de l'icône  => ce qui permet de créer un cercle */
     width: 25px; /* Largeur de la bordure entre l'icône et le cercle */
     height: 25px; /* Hauteur de la bordure entre l'icône et le cerlce */
@@ -169,14 +170,14 @@
     place-items: center; /* L'élément est centré le long de l'axe correspondant */
   }
   .fa-check {
-    color: #99E2D0;
+    color: #99E2D0; /* Couleur verte icone */
   }
   /* BOUTON COMMENCER */
   .button-commander-design {
-    padding-top: 50px;
-    padding-bottom: 130px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-top: 50px; /* Epace en haut */
+    padding-bottom: 130px; /* Epace en bas */
+    padding-left: 120px; /* Epace à gauche */
+    padding-right: 120px; /* Epace à droite */
   }
   .button-commander {
     background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); /* Bakcground couleur dégradé */
