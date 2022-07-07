@@ -158,11 +158,6 @@
     text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
     white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
   }
-  p, h3 {
-    overflow: hidden; /* Permet de cacher => fait disparaître le container check */
-    text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
-    white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
-  }
   .main__menu-cards--prix {
     margin-left: auto; /* Met l'éléments tout à gauche */
     font-weight: 900; /* Nuance de gras */
@@ -178,6 +173,7 @@
     transition: margin-right 0.5s; /* Permet de rendre l'animation moins brute et permet un temps d'attente */
     display: grid; /* Permet la propriété Grid */
     place-items: center; /* L'élément est centré le long de l'axe correspondant */
+    flex-shrink: 0; /* La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible */
   }
   /* PERMET L'ANIMATION DU CONTAINER CHECK */
   .main__menu-cards:hover .main__menu-cards--animations {
