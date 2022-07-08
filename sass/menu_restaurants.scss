@@ -1,6 +1,8 @@
 @use "utils/mixins" as *;
 @use "utils/variables" as *;
 
+
+/* Animation check vert rotation */
 @keyframes animation-menu {
     /* Quand sa commence */
     0%{
@@ -12,6 +14,17 @@
     }
 
 }
+
+/* Animation Page quand les menus s'affichent progressivement */
+@keyframes animation-page {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 
 
 /* Page Mobile Menu à la française */
@@ -123,7 +136,43 @@
         overflow: hidden; /* Permet de cacher => fait disparaître le container check */
         text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
         white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
+
     }
+
+    /* Animation Page quand les menus s'affichent progressivement => delay 0 à 9*/
+    .delay-0{
+        animation: animation-page 1s ease-in;
+    }
+    .delay-1{
+        animation: animation-page 1.5s ease-in;
+    }
+    .delay-2{
+        animation: animation-page 2s ease-in;
+    }
+    .delay-3{
+        animation: animation-page 2.5s ease-in;
+    }
+    .delay-4{
+        animation: animation-page 3s ease-in;
+    }
+    .delay-5{
+        animation: animation-page 3.5s ease-in;
+    }
+    .delay-6{
+        animation: animation-page 4s ease-in;
+    }
+    .delay-7{
+        animation: animation-page 4.5s ease-in;
+    }
+    .delay-8{
+        animation: animation-page 5s ease-in;
+    }
+    .delay-9{
+        animation: animation-page 5.5s ease-in;
+    }
+    
+    /* TITRE + PPARAGRAPHE CARDS */
+
     .main__menu-cards--titre{
         padding-left: 20px; /* Epace à gauche */
         padding-right: 20px; /* Epace à droite */
