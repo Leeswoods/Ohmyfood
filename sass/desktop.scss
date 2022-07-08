@@ -272,6 +272,7 @@
         color: white; /* Couleur Blanche */
         font-family: $fonts-title; /* Police d'écriture */
         padding-bottom: 20px; /* Espace en bas */
+        font-weight: 300; /* Nuance de gras */
     }
     .Footer__restaurant{
         @include footer_flex (); /* Mixins : Propriété flexbox + Met les éléments en ligne */
