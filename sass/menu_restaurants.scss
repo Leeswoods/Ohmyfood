@@ -27,7 +27,7 @@
 
 
 
-/* Page Mobile Menu Restaurants */
+/* Page Mobile Menu Restaurant */
 @media screen and (max-width: 768px) {
     *{
         padding: 0;
@@ -88,7 +88,7 @@
         @include card-coeur-restaurants (); /* Mixins : ICON COEUR PAGE MENU */
         @include Titre-icon-menu ();  /* Mixins : PADDING ICON COEUR + TITRE */
     }
-    .main__titre-icon:hover .fas{
+    .main__icon:hover .fas{
         opacity: 1; /* Permet de voir la couleur */
     }
     .color-icon-restaurant{

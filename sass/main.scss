@@ -2,6 +2,7 @@
 @use "utils/variables" as *;
 @use "menu_restaurants" as *;
 @use "desktop.scss" as *;
+@use "../sass/desktop_menu_restaurants.scss" as *;
 
 @font-face{
     font-family:"shrikhand.regular";
@@ -241,10 +242,10 @@
         opacity: 0; /* Permet de pas voir la couleur */
         transition: all 200ms ease-in-out; /* */
     }
-    .Restaurants__cards-body:hover .fas {
+    .Restaurants__cards-body--icon:hover .fas {
         opacity: 1; /* Permet de voir la couleur */
     }
-    .Restaurants__cards-body--modifier:hover .fas{
+    .Restaurants__cards-body-icon--modifier:hover .fas{
         opacity: 1; /* Permet de voir la couleur */
     }
 
