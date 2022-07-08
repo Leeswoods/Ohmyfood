@@ -157,31 +157,31 @@
     animation: animation-page 1s ease-in;
   }
   .delay-1 {
-    animation: animation-page 1.5s ease-in;
+    animation: animation-page 1.2s ease-in;
   }
   .delay-2 {
-    animation: animation-page 2s ease-in;
+    animation: animation-page 1.4s ease-in;
   }
   .delay-3 {
-    animation: animation-page 2.5s ease-in;
+    animation: animation-page 1.6s ease-in;
   }
   .delay-4 {
-    animation: animation-page 3s ease-in;
+    animation: animation-page 1.8s ease-in;
   }
   .delay-5 {
-    animation: animation-page 3.5s ease-in;
+    animation: animation-page 2s ease-in;
   }
   .delay-6 {
-    animation: animation-page 4s ease-in;
+    animation: animation-page 2.2s ease-in;
   }
   .delay-7 {
-    animation: animation-page 4.5s ease-in;
+    animation: animation-page 2.4s ease-in;
   }
   .delay-8 {
-    animation: animation-page 5s ease-in;
+    animation: animation-page 2.6s ease-in;
   }
   .delay-9 {
-    animation: animation-page 5.5s ease-in;
+    animation: animation-page 2.8s ease-in;
   }
   /* TITRE + PPARAGRAPHE CARDS */
   .main__menu-cards--titre {
