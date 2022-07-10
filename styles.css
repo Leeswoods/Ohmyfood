@@ -615,7 +615,7 @@
     background-color: #353535; /* Couleur de l'arrière plan du footer*/
     width: 100%; /* Largeur de l'arrière plan */
     height: 260px; /* Hauteur de l'arrière plan */
-    padding: 1rem; /* Met au milieu les listes */
+    padding: 1rem; /* Espace gauche, droit, haut et bas */
     display: flex; /* Permet la propriété flexbox */
     flex-direction: column; /* Met les éléments en colonne */
   }
@@ -911,11 +911,11 @@
   /* FOOTER */
   .footer--page-menu {
     position: relative;
-    top: 40rem;
+    top: 38rem; /* Espace en haut */
     background-color: #353535; /* Couleur de l'arrière plan du footer*/
     width: 100%; /* Largeur de l'arrière plan */
     height: 260px; /* Hauteur de l'arrière plan */
-    padding: 30px; /* Met au milieu les listes */
+    padding: 1rem; /* Met au milieu les listes */
     display: flex; /* Permet la propriété flexbox */
     flex-direction: column; /* Met les éléments en colonne */
   }

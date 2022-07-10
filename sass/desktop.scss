@@ -267,7 +267,7 @@
         background-color: #353535; /* Couleur de l'arrière plan du footer*/
         width: 100%; /* Largeur de l'arrière plan */
         height: 260px; /* Hauteur de l'arrière plan */
-        padding: 1rem; /* Met au milieu les listes */
+        padding: 1rem; /* Espace gauche, droit, haut et bas */
         display: flex; /* Permet la propriété flexbox */
         flex-direction: column; /* Met les éléments en colonne */
     }
