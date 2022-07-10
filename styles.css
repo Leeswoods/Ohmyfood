@@ -1300,6 +1300,302 @@
     font-weight: bold; /* Permet de mettre les titres en gras */
   }
 }
+/* Animation check vert rotation */
+@keyframes animation-menu {
+  /* Quand sa commence */
+  0% {
+    transform: rotate(-270deg); /* La rotation */
+  }
+  /* Quand sa fini */
+  100% {
+    transform: rotate(0); /* La rotation */
+  }
+}
+/* Animation Page quand les menus s'affichent progressivement */
+@keyframes animation-page {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Page Mobile Menu Restaurant */
+/* VERSION TABLETTE */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Le containaire enfant ne peut pas partir du containaire parent */
+  }
+  /* HEADER */
+  /* Logo + Icon */
+  .header__logo--menu-restaurants {
+    width: 20rem; /* Largeur du logo */
+    height: 40%; /* Hauteur du logo */
+    margin-top: 30px; /* Marge en haut */
+    margin-left: 22rem; /* Margeà gauche */
+    position: relative; /* Permet de mettre en Position relative => parent*/
+  }
+  .fa-arrow-left {
+    position: absolute; /* Permet de mettre en Position absolute => enfant */
+    left: 30px; /* Marge à gauche */
+    top: 3rem; /* Marge en haut */
+    color: black; /* Couleur */
+  }
+  /* MAIN */
+  /* Image de fond */
+  .background-image {
+    width: 100%; /* Largeur de l'élément */
+    height: 37.5rem; /* Maximum Hauteur de l'élément */
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    position: relative; /* Permet de mettre en Position relative => parent*/
+  }
+  /* Container => menu / la carte */
+  .main__container {
+    background-color: #F6F6F6; /* Couleur d'arrière plan */
+    width: 100%; /* Largeur de l'élément */
+    height: auto; /* Hauteur de l'élément */
+    position: absolute; /* Permet de mettre en Position absolute => enfant */
+    top: 40.5rem; /* Déplace l'élément en haut */
+    border-top-left-radius: 45px; /* Bordure arrondie à gauche de l'image */
+    border-top-right-radius: 45px; /* Bordure arrondie à droite de l'image */
+  }
+  /* Titre + icon menu */
+  .main__titre-icon {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    /* Mixins : PADDING ICON COEUR + TITRE */
+    position: relative; /* Permet de mettre en Position relative => parent*/
+  }
+  .main__titre-icon h1 {
+    font-family: "shrikhand.regular"; /* FONTS TITRE + LOGO */
+    font-weight: 100; /* Nuance de gras */
+  }
+  .main__titre-icon--coeur i {
+    font-size: 2rem; /* Taille de l'élément */
+    position: absolute; /* Permet de mettre l'élément en position absolute */
+    right: 3rem; /* Met l'élément à droite */
+    top: 49%; /* Met l'élément en haut à 49% */
+    transform: translateY(-49%); /* Permet de centre l'élément */
+    /* Mixins : ICON COEUR PAGE MENU */
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    /* Mixins : PADDING ICON COEUR + TITRE */
+  }
+  .main__icon:hover .fas {
+    opacity: 1; /* Permet de voir la couleur */
+  }
+  .color-icon-restaurant {
+    color: black; /* Couleur */
+  }
+  /* ENTRÉE/PLAT/DESSERT : TITRE + BARRE VERTE  */
+  .main__menu {
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+    background-color: #F6F6F6; /* Couleur d'arrière plan */
+    width: 100%; /* Largeur de l'élément */
+    height: auto; /* Hauteur de l'élément */
+    padding-top: 40px; /* Epace en haut */
+    padding-left: 30px; /* Epace à gauche */
+  }
+  .main__menu a {
+    text-decoration: none; /* Fait disparaître l'aspect lien (la barre bleu) */
+    color: black; /* Couleur */
+  }
+  .main__menu-titre {
+    text-transform: uppercase; /* tous les caractères seront écrits en capitales */
+    font-weight: 400; /* Nuance de gras */
+    position: relative; /* Permet de mettre en Position relative => parent*/
+    /* Barre verte en dessous du Entrée/Plat/Dessert */
+    /* ::after crée un pseudo-élément qui sera le dernier enfant de l'élément sélectionné */
+  }
+  .main__menu-titre::after {
+    content: ""; /* La propriété CSS content remplace un élément avec une valeur générée */
+    height: 3px; /* Hauteur de l'élément */
+    width: 47px; /* Largueur de l'élément */
+    background-color: #99E2D0; /* Couleur verte */
+    position: absolute; /* Permet de mettre en Position absolute => enfant */
+    top: 28px; /* Déplace l'élément en haut */
+    left: 0px; /* Déplace l'élément à gauche */
+  }
+  /* CARDS + ANIMATIONS */
+  .main__menu-cards {
+    background-color: white; /* Couleur d'arrière plan */
+    border-radius: 20px; /* Permet de mettre une bordure */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+    height: 75px; /* Hauteur de l'élément */
+    margin-top: 20px; /* Marge à gauche */
+    display: flex; /* Propriété flexbox */
+    margin-right: 20px; /* Marge à droite */
+    overflow: hidden; /* Permet de cacher => fait disparaître le container check */
+    text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
+    white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
+  }
+  /* Animation Page quand les menus s'affichent progressivement => delay 0 à 9*/
+  .delay-0 {
+    animation: animation-page 1s ease-in;
+  }
+  .delay-1 {
+    animation: animation-page 1.2s ease-in;
+  }
+  .delay-2 {
+    animation: animation-page 1.4s ease-in;
+  }
+  .delay-3 {
+    animation: animation-page 1.6s ease-in;
+  }
+  .delay-4 {
+    animation: animation-page 1.8s ease-in;
+  }
+  .delay-5 {
+    animation: animation-page 2s ease-in;
+  }
+  .delay-6 {
+    animation: animation-page 2.2s ease-in;
+  }
+  .delay-7 {
+    animation: animation-page 2.4s ease-in;
+  }
+  .delay-8 {
+    animation: animation-page 2.6s ease-in;
+  }
+  .delay-9 {
+    animation: animation-page 2.7s ease-in;
+  }
+  /* TITRE + PPARAGRAPHE CARDS */
+  .main__menu-cards--titre {
+    padding-left: 20px; /* Epace à gauche */
+    padding-right: 20px; /* Epace à droite */
+    padding-top: 15px; /* Epace en haut */
+    padding-bottom: 5px; /* Epace en bas */
+  }
+  .main__menu-cards--description {
+    font-size: 16px; /* Taille d'écriture */
+    padding-left: 20px; /* Epace à gauche */
+    padding-right: 20px; /* Epace à droite */
+  }
+  .menu-cards__titre-description {
+    overflow: hidden; /* Permet de cacher => fait disparaître le container check */
+    text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
+    white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
+  }
+  .main__menu-cards--prix {
+    margin-left: auto; /* Met l'éléments tout à gauche */
+    font-weight: 900; /* Nuance de gras */
+    padding: 15px 20px; /* Espace en haut et en bas. Puis à droite et à gauche */
+    display: flex; /* Permet la propriété Flexbox */
+    align-items: flex-end; /* Met l'élément à la fin */
+  }
+  .main__menu-cards--animations {
+    background-color: #99E2D0; /* Couleur verte */
+    margin-right: -5rem; /* Permet de sortir l'élément/container check de la card */
+    width: 5rem; /* Même largeur que le margin-right car sinon sa casse le container prix */
+    border-radius: 0 20px 20px 0; /* Permet d'arrondir les bord en haut à droite et en bas à droite*/
+    transition: margin-right 0.5s; /* Permet de rendre l'animation moins brute et permet un temps d'attente */
+    display: grid; /* Permet la propriété Grid */
+    place-items: center; /* L'élément est centré le long de l'axe correspondant */
+    flex-shrink: 0; /* La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible */
+  }
+  /* PERMET L'ANIMATION DU CONTAINER CHECK */
+  .main__menu-cards:hover .main__menu-cards--animations {
+    margin-right: 0; /* Met l'élément dans la card et le rend visible */
+  }
+  /* PERMET L'ANIMATION DE LA FLEHCE DANS LE CONTAINER CHECK */
+  .main__menu-cards:hover i {
+    animation: animation-menu 0.5s ease-in-out;
+  }
+  .main__menu-cards--animations-icon {
+    border: 2px solid white; /* Bordure de l'icone en grise */
+    background-color: white; /* Couleur arrière plan */
+    border-radius: 25px; /* Bordure arrondie de l'icône  => ce qui permet de créer un cercle */
+    width: 25px; /* Largeur de la bordure entre l'icône et le cercle */
+    height: 25px; /* Hauteur de la bordure entre l'icône et le cerlce */
+    display: grid; /* Permet la propriété Grid */
+    place-items: center; /* L'élément est centré le long de l'axe correspondant */
+  }
+  .fa-check {
+    color: #99E2D0; /* Couleur verte icone */
+  }
+  /* BOUTON COMMENCER */
+  .button-commander-design {
+    padding-top: 50px; /* Epace en haut */
+    padding-bottom: 130px; /* Epace en bas */
+    padding-left: 120px; /* Epace à gauche */
+    padding-right: 120px; /* Epace à droite */
+  }
+  .button-commander {
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); /* Bakcground couleur dégradé */
+    /* Mixins : Bakcground couleur dégradé */
+    color: white; /*Couleur du texte dans le bouton */
+    font-size: 18px; /* Taille du texte */
+    padding: 12px 12px; /* Espace entre le texte dans le bouton et les côtés du bouton */
+    margin-top: 0rem; /* Espace en haut */
+    margin-left: 15rem; /* Espace à gauche */
+    width: 240px; /* Largeur du bouton */
+    height: 50px; /* Hauteur du bouton */
+    font-family: "Roboto-Thin"; /* Police d'écriture */
+    font-weight: bold; /* Texte mit en gras */
+    border-top: rgba(255, 121, 218, 0.9); /* Couleur élément en haut */
+    border-bottom: rgba(147, 86, 220, 0.9); /* Couleur élément en bas */
+    border-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9)); /* Couleur de bordure dégradé */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+    border-radius: 30px; /* Bordure arrondie de 30 px */
+  }
+  /* FOOTER */
+  .footer--page-menu {
+    position: relative;
+    top: 77rem; /* Espace en haut */
+    background-color: #353535; /* Couleur de l'arrière plan du footer*/
+    width: 100%; /* Largeur de l'arrière plan */
+    height: 260px; /* Hauteur de l'arrière plan */
+    padding: 1rem; /* Met au milieu les listes */
+    display: flex; /* Permet la propriété flexbox */
+    flex-direction: column; /* Met les éléments en colonne */
+  }
+  .footer__titre {
+    color: white; /* Couleur Blanche */
+    font-family: "shrikhand.regular"; /* Police d'écriture */
+    padding-bottom: 20px; /* Espace en bas */
+    font-weight: 300; /* Nuance de gras */
+  }
+  .Footer__restaurant {
+    display: flex; /* Propriété flexbox */
+    flex-direction: row; /* Met les éléments en ligne */
+    /* Mixins : Propriété flexbox + Met les éléments en ligne */
+  }
+  .Footer__icon-texte {
+    padding-left: 10px; /* Espace à gauche */
+    /* Mixins : Espace à gauche */
+  }
+  .Footer__icon-texte--modifier {
+    padding-left: 5px; /* Espace à gauche */
+    /* Mixins : Espace à gauche */
+  }
+  .Footer__partenaire {
+    display: flex; /* Propriété flexbox */
+    flex-direction: row; /* Met les éléments en ligne */
+    /* Mixins : Propriété flexbox + Met les éléments en ligne */
+  }
+  footer ul {
+    width: 100%; /* Largeur des listes : permet de les rapprocher ensemble tout en laissant un espace */
+    font-size: 18px; /* Tailel d'écriture de la liste */
+    font-family: "Roboto-Thin"; /* FONTS TEXTES */
+    color: white; /* Couleur Blanche */
+  }
+  footer li {
+    margin-bottom: 16px; /* Sépare les listes entre elles */
+    list-style-type: none; /* Enlève les points */
+  }
+  footer li a {
+    text-decoration: none; /* Enlève l'aspect lien */
+    color: white; /* Couleur Blanche */
+  }
+  .titre-footer {
+    font-weight: bold; /* Permet de mettre les titres en gras */
+  }
+}
 @font-face {
   font-family: "shrikhand.regular";
   src: url("Fonts/shrikhand.regular.ttf");
