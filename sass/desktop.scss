@@ -26,12 +26,13 @@
     /* HEADER */
     header{
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+        padding: 1rem;
     }
     .header__logo{
         width: 20rem; /* Largeur du logo */
         height: 40%; /* Hauteur du logo */
-        margin-top: 30px; /* Marge en haut */
-        margin-left: 800px; /* Margeà gauche */
+        margin-top: 2rem; /* Marge en haut */
+        margin-left: 48rem; /* Margeà gauche */
 
     }
 
@@ -45,21 +46,21 @@
     .localisation-restaurant{
         display: flex; /* Propriété Flexbox */
         flex-direction: row; /* Met les éléments sur la même ligne */
-        justify-content: space-around; /* Espace entre les éléments */
+        /*justify-content: space-around; /* Espace entre les éléments */
         background-color: $background-grey; /* Bakcground couleur */
         margin-top: 5px; /* Marge en haut */
         padding : 20px; /* Espace => taille du bloc */
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     }
     .localisation-restaurant__icon{
-        padding-left: 50rem; /* Espace en haut */
+        padding-left: 52rem; /* Espace en haut */
         padding-top: 13px; /* Espace à gauche */
     }
     .localisation-restaurant__texte{
         font-family: $fonts-text; /* Police d'écriture */
         font-size: 1.5rem; /* Taille de la police d'écriture */
         font-weight: bold; /* Met le texte en gras */
-        padding-right: 53rem; /* Espace à droite */
+        padding-left: 1rem; /* Espace à droite */
     }
     
             /* Réservation menu */
