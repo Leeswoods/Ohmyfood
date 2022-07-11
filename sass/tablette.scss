@@ -164,7 +164,8 @@
     .Fonctionnement__texte-card{
         padding-right: 32rem; /* Espace à droite */
         font-size: 20px; /* Taille du texte */
-        font-weight: bold; /* Met le texte en gras */
+        font-weight: 600; /* Met le texte en gras */
+        font-family: "Roboto-Regular"; /* Police d'écriture */
     }
     
         /* Fonctionnement Menu => Composition Card */
@@ -183,6 +184,14 @@
         width: 100%; /* Largeur du container */
         height: 55rem; /* Hauteur du container */
         margin-top: 80px; /* Marge en haut */
+    }
+    .Restaurants h3 {
+        font-family: "Roboto-Regular"; /* Police d'écriture */
+        font-weight: 600; /* Nuance de gras */
+    }
+    .Restaurants p{
+        font-family: "Roboto-Regular"; /* Police d'écriture */
+        font-weight: 200; /* Nuance de gras */
     }
     .Restaurants__titre{
         padding-top: 50px; /* Espace en haut */

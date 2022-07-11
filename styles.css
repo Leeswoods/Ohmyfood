@@ -118,7 +118,7 @@
   }
   /* ENTRÉE/PLAT/DESSERT : TITRE + BARRE VERTE  */
   .main__menu {
-    font-family: "Roboto-Thin"; /* Police d'écriture */
+    font-family: "Roboto-Regular"; /* Police d'écriture */
     background-color: #F6F6F6; /* Couleur d'arrière plan */
     width: 100%; /* Largeur de l'élément */
     height: auto; /* Hauteur de l'élément */
@@ -473,7 +473,8 @@
   .Fonctionnement__texte-card {
     padding-right: 80px; /* Espace à droite */
     font-size: 20px; /* Taille du texte */
-    font-weight: bold; /* Met le texte en gras */
+    font-weight: 600; /* Met le texte en gras */
+    font-family: "Roboto-Regular"; /* Police d'écriture */
   }
   /* Fonctionnement Menu => Composition Card */
   .Composition-texte-card {
@@ -491,6 +492,14 @@
     /*margin-top: 80px; /* Marge en haut */
     /* margin-bottom: 3rem; /* Marge en bas */
     padding: 2rem 1rem; /* Espace en haut et en bas / Espace à droite et à gauche */
+  }
+  .Restaurants h3 {
+    font-family: "Roboto-Regular"; /* Police d'écriture */
+    font-weight: 600; /* Nuance de gras */
+  }
+  .Restaurants p {
+    font-family: "Roboto-Regular"; /* Police d'écriture */
+    font-weight: 200; /* Nuance de gras */
   }
   .Restaurants__titre {
     padding-top: 50px; /* Espace en haut */
@@ -695,6 +704,9 @@
     box-sizing: border-box; /* Le containaire enfant ne peut pas partir du containaire parent */
   }
   /* HEADER */
+  header {
+    padding: 0rem;
+  }
   /* Logo + Icon */
   .header__logo--menu-restaurants {
     width: 20rem; /* Largeur du logo */
@@ -706,7 +718,7 @@
   .fa-arrow-left {
     position: absolute; /* Permet de mettre en Position absolute => enfant */
     left: 30px; /* Marge à gauche */
-    top: 4rem; /* Marge en haut */
+    top: 3rem; /* Marge en haut */
     color: black; /* Couleur */
   }
   /* MAIN */
@@ -763,7 +775,7 @@
     flex-direction: row;
   }
   .main__menu {
-    font-family: "Roboto-Thin"; /* Police d'écriture */
+    font-family: "Roboto-Regular"; /* Police d'écriture */
     background-color: #F6F6F6; /* Couleur d'arrière plan */
     width: 100%; /* Largeur de l'élément */
     height: auto; /* Hauteur de l'élément */
@@ -1116,7 +1128,8 @@
   .Fonctionnement__texte-card {
     padding-right: 32rem; /* Espace à droite */
     font-size: 20px; /* Taille du texte */
-    font-weight: bold; /* Met le texte en gras */
+    font-weight: 600; /* Met le texte en gras */
+    font-family: "Roboto-Regular"; /* Police d'écriture */
   }
   /* Fonctionnement Menu => Composition Card */
   .Composition-texte-card {
@@ -1132,6 +1145,14 @@
     width: 100%; /* Largeur du container */
     height: 55rem; /* Hauteur du container */
     margin-top: 80px; /* Marge en haut */
+  }
+  .Restaurants h3 {
+    font-family: "Roboto-Regular"; /* Police d'écriture */
+    font-weight: 600; /* Nuance de gras */
+  }
+  .Restaurants p {
+    font-family: "Roboto-Regular"; /* Police d'écriture */
+    font-weight: 200; /* Nuance de gras */
   }
   .Restaurants__titre {
     padding-top: 50px; /* Espace en haut */
@@ -1402,7 +1423,7 @@
   }
   /* ENTRÉE/PLAT/DESSERT : TITRE + BARRE VERTE  */
   .main__menu {
-    font-family: "Roboto-Thin"; /* Police d'écriture */
+    font-family: "Roboto-Regular"; /* Police d'écriture */
     background-color: #F6F6F6; /* Couleur d'arrière plan */
     width: 100%; /* Largeur de l'élément */
     height: auto; /* Hauteur de l'élément */
@@ -1762,7 +1783,8 @@
   .Fonctionnement__texte-card {
     padding-right: 80px; /* Espace à droite */
     font-size: 20px; /* Taille du texte */
-    font-weight: bold; /* Met le texte en gras */
+    font-weight: 600; /* Met le texte en gras */
+    font-family: "Roboto-Regular"; /* Police d'écriture */
   }
   /* Fonctionnement Menu => Composition Card */
   .Composition-texte-card {
@@ -1779,11 +1801,19 @@
     height: 1700px; /* Hauteur du container */
     margin-top: 80px; /* Marge en haut */
   }
+  .Restaurants h3 {
+    font-family: "Roboto-Regular"; /* Police d'écriture */
+    font-weight: 600; /* Nuance de gras */
+  }
+  .Restaurants p {
+    font-family: "Roboto-Regular"; /* Police d'écriture */
+    font-weight: 200; /* Nuance de gras */
+  }
   .Restaurants__titre {
     padding-top: 50px; /* Espace en haut */
     padding-left: 20px; /* Espece l'élément à gauche */
     font-family: "Roboto-Black"; /* Police d'écriture */
-    font-weight: 500; /* Nuance de gras */
+    font-size: 18px; /* Taille de la police d'écriture */
   }
   /* RESTAURANTS => MINI CARDS */
   .Restaurants__cards {
