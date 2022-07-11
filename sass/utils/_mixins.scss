@@ -10,6 +10,29 @@
     padding-right: 15px; /* Permet de centre l'élément */
 }
 
+    /* VERSION DESKTOP => La propriété Flexbox => Disposition des Cards */
+@mixin Flex-Restaurants__mini-cards--desktop {
+    display: flex; /* Permet la propriété Flexbox */
+    flex-direction: row; /* Permet de mettre les éléments en colonne */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Largeur */
+    height: auto; /* Longueur */
+    padding-left: 100px; /* Espace à gauche */
+    padding-right: 100px; /* Espace à droite */
+}
+    /* VERSION TABLETTE => La propriété Flexbox => Disposition des Cards */
+@mixin Flex-Restaurants__mini-cards--tablette {
+    display: flex; /* Permet la propriété Flexbox */
+    flex-direction: row; /* Permet de mettre les éléments en colonne */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Largeur */
+    height: auto; /* Longueur */
+    padding-left: 1rem; /* Espace à gauche */
+    padding-right: 1rem; /* Espace à droite */
+}
+
     /* La créaction des Cards => Background color, etc.. */
 @mixin Restaurants__mini-cards {
     background-color: white; /* Couleur en arrière plan de la card */
@@ -20,6 +43,30 @@
     height: 340px; /* Longueur de la card*/
     margin-top: 30px; /* Marge en haut qui sépare le titre activités à Marseille de la card */
 }
+
+    /* VERSION DESKTOP => La créaction des Cards => Background color, etc.. */
+@mixin Restaurants__mini-cards--dekstop {
+    background-color: white; /* Couleur en arrière plan de la card */
+    border-radius: 15px; /* Bordure arrondie de la cards  */
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    width: 50rem; /* Largeur de la card */
+    height: 340px; /* Longueur de la card*/
+    margin-top: 30px; /* Marge en haut qui sépare le titre activités à Marseille de la card */
+}
+
+    /* VERSION TABLETTE => La créaction des Cards => Background color, etc.. */
+@mixin Restaurants__mini-cards--tablette {
+    background-color: white; /* Couleur en arrière plan de la card */
+    border-radius: 15px; /* Bordure arrondie de la cards  */
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    width: 57rem; /* Largeur de la card */
+    height: 340px; /* Longueur de la card*/
+    margin-top: 30px; /* Marge en haut qui sépare le titre activités à Marseille de la card */
+}
+
+
 
     /* Images des minis cards Restaurants */
 @mixin Restaurants__cards-images {
@@ -40,6 +87,27 @@
     margin-left: 340px; /* Marge à gauche */
     position: relative; /* Permet de mettre l'élément en position relative => parent */
 }
+    /* VESION DESKTOP => Bloc Nouveau vert en haut des images de restaurants */
+@mixin Restaurants__cards-nouveau--desktop {
+    background-color: #99E2D0; /* Couleur en arrière plan de la card */
+    width: 100px; /* Largeur de l'élément */
+    height: 30px; /* Hauteur de l'élément */
+    margin-top: -240px; /* Marge en haut */
+    margin-left: 43rem; /* Marge à gauche */
+    position: relative; /* Permet de mettre l'élément en position relative => parent */
+}
+
+    /* VESION TABLETTE => Bloc Nouveau vert en haut des images de restaurants */
+@mixin Restaurants__cards-nouveau--tablette {
+    background-color: #99E2D0; /* Couleur en arrière plan de la card */
+    width: 100px; /* Largeur de l'élément */
+    height: 30px; /* Hauteur de l'élément */
+    margin-top: -240px; /* Marge en haut */
+    margin-left: 50rem; /* Marge à gauche */
+    position: relative; /* Permet de mettre l'élément en position relative => parent */
+}
+
+
 @mixin Restaurants__cards-nouveau--texte {
     text-align: center; /* Centre le texte */
     padding-top: 5px; /* Espace en haut */
@@ -98,3 +166,30 @@
 @mixin Footer__icon-texte--modifier{
     padding-left: 5px; /* Espace à gauche */
 }
+
+
+
+
+        /* MENU PAGE RESTAURANTS */
+
+/* COEUR ICON A COTER DU TITRE */
+@mixin card-coeur-restaurants {
+    font-size: 2rem; /* Taille de l'élément */
+    position: absolute; /* Permet de mettre l'élément en position absolute */
+    right: 3rem; /* Met l'élément à droite */
+    top: 49%; /* Met l'élément en haut à 49% */
+    transform: translateY(-49%); /* Permet de centre l'élément */
+}
+/* PADDING ICON COEUR + TITRE */
+@mixin Titre-icon-menu {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+/* ENTRÉE/PLAT/DESSERT : TITRE H3   */
+@mixin titre-menu-restaurants {
+    padding-top: 10px;
+}
+
