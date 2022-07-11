@@ -67,7 +67,6 @@
             /* Réservation menu */
     .Réservation{
         background-color: $background-grey-clair; /* Bakcground couleur */
-        font-family: $fonts-text; /* Police d'écriture */
         width: 100%; /* Largueur du contenaire */ 
         height: 300px; /* Longueur du contenaire */ 
         padding-left: 60px; /* Espace à gauche */
@@ -76,10 +75,13 @@
     }
     .Réservation__titre{
         padding-top: 30px; /* Espace entre le titre et le texte d'en haut */
+        font-family: "Roboto-Black"; /* Police d'écriture */
+        font-weight: 500; /* Nuance de gras */
     }
     .Réservation__texte{
         padding-top: 20px; /* Espace en haut */
-        font-size: 20px; /* Taille du texte */
+        font-size: 22px; /* Taille du texte */
+        font-family: "Roboto-Regular"; /* Police d'écriture */
     }
     .Réservation__button-recherche{
         padding-top: 20px; /* Espace entre le bouton et le texte d'en haut */
@@ -109,7 +111,8 @@
         padding-left: 3rem; /* Espace à gauche */
         padding-bottom: 20px; /* Espace en bas */
         font-size: 1.5rem; /* Taille d'écriture */
-        font-weight: 900; /* Nuance de gras */
+        font-family: "Roboto-Black"; /* Police d'écriture */
+        font-weight: 500; /* Nuance de gras */
     }
     .flex-card-desktop{
         display: flex; /* Propriété Flexbox */
@@ -186,7 +189,8 @@
         padding-left: 1rem; /* Espece l'élément à gauche */
         font-family: $fonts-text; /* Police d'écriture */ 
         font-size: 1rem; /* Taille d'écriture */
-        font-weight: 900; /* Nuance de gras */
+        font-family: "Roboto-Black"; /* Police d'écriture */
+        font-weight: 500; /* Nuance de gras */
     }
     
 

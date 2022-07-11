@@ -52,7 +52,7 @@
     .fa-arrow-left{
         position: absolute; /* Permet de mettre en Position absolute => enfant */
         left: 30px; /* Marge à gauche */
-        top: 45px; /* Marge en haut */
+        top: 4rem; /* Marge en haut */
         color: black; /* Couleur */
     }
 
@@ -260,7 +260,7 @@
     /* FOOTER */
     .footer--page-menu{
         position: relative;
-        top: 38rem; /* Espace en haut */
+        top: 37rem; /* Espace en haut */
         background-color: #353535; /* Couleur de l'arrière plan du footer*/
         width: 100%; /* Largeur de l'arrière plan */
         height: 260px; /* Hauteur de l'arrière plan */

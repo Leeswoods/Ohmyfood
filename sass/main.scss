@@ -14,7 +14,14 @@
     font-family:"Roboto-Thin";
     src:url("Fonts/Roboto-Thin.ttf");
 }
-
+@font-face{
+    font-family:"Roboto-Black";
+    src:url("Fonts/Roboto-Black.ttf");
+}
+@font-face{
+    font-family:"Roboto-Regular";
+    src:url("Fonts/Roboto-Regular.ttf");
+}
 
 
 /* Mobile */
@@ -75,19 +82,21 @@
             /* Réservation menu */
     .Réservation{
         background-color: $background-grey-clair; /* Bakcground couleur */
-        font-family: $fonts-text; /* Police d'écriture */
         width: 100%; /* Largueur du contenaire */ 
         height: 300px; /* Longueur du contenaire */ 
-        padding-left: 60px; /* Espace à gauche */
-        padding-right: 60px; /* Espace à droite */
+        padding-left: 50px; /* Espace à gauche */
+        padding-right: 50px; /* Espace à droite */
         text-align: center; /* Met le bloc au cente */
     }
     .Réservation__titre{
         padding-top: 30px; /* Espace entre le titre et le texte d'en haut */
+        font-family: "Roboto-Black"; /* Police d'écriture */
+        font-weight: 500; /* Nuance de gras */
     }
     .Réservation__texte{
         padding-top: 20px; /* Espace en haut */
-        font-size: 20px; /* Taille du texte */
+        font-size: 22px; /* Taille du texte */
+        font-family: "Roboto-Regular"; /* Police d'écriture */
     }
     .Réservation__button-recherche{
         padding-top: 20px; /* Espace entre le bouton et le texte d'en haut */
@@ -117,6 +126,8 @@
         padding-top: 40px; /* Espace en haut */
         padding-left: 20px; /* Espace à gauche */
         padding-bottom: 20px; /* Espace en bas */
+        font-family: "Roboto-Black"; /* Police d'écriture */
+        font-weight: 500; /* Nuance de gras */
     }
     .Container-Fonctionnement__card{
         background-color: #F6F6F6; /* Bakcground couleur */
@@ -186,7 +197,8 @@
     .Restaurants__titre{
         padding-top: 50px; /* Espace en haut */
         padding-left: 20px; /* Espece l'élément à gauche */
-        font-family: $fonts-text; /* Police d'écriture */ 
+        font-family: "Roboto-Black"; /* Police d'écriture */
+        font-weight: 500; /* Nuance de gras */
     }
     
         /* RESTAURANTS => MINI CARDS */
