@@ -32,8 +32,8 @@
         width: 20rem; /* Largeur du logo */
         height: 40%; /* Hauteur du logo */
         margin-top: 2rem; /* Marge en haut */
-        margin-left: 48rem; /* Margeà gauche */
-
+        margin-left: 50rem; /* Margeà gauche */
+        margin-right: 50rem; /* Margeà droite*/
     }
 
     /* MAIN */
@@ -42,6 +42,8 @@
     .middle-container a{
         text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
         color: black; /* Met le texte en noir */
+        display: flex; /* Permet la propriété Display */
+        justify-content: center; /* Met les éléments au centre */
     }
     .localisation-restaurant{
         display: flex; /* Propriété Flexbox */
@@ -53,7 +55,7 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     }
     .localisation-restaurant__icon{
-        padding-left: 52rem; /* Espace en haut */
+        /*padding-left: 52rem; /* Espace en haut */
         padding-top: 13px; /* Espace à gauche */
     }
     .localisation-restaurant__texte{
