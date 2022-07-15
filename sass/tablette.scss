@@ -38,9 +38,13 @@
     }
 
     /* MAIN */
+    .middle-container a{
+        text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
+        color: black; /* Met le texte en noir */
+    }
 
     /* Localisation */
-    .middle-container a{
+    .lien-localisation a{
         text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
         color: black; /* Met le texte en noir */
     }

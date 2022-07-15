@@ -350,8 +350,12 @@
     margin-right: 50rem; /* Margeà droite*/
   }
   /* MAIN */
-  /* Localisation */
   .middle-container a {
+    text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
+    color: black; /* Met le texte en noir */
+  }
+  /* Localisation */
+  .lien-localisation a {
     text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
     color: black; /* Met le texte en noir */
     display: flex; /* Permet la propriété Display */
@@ -1010,8 +1014,12 @@
     margin-left: 19rem; /* Margeà gauche */
   }
   /* MAIN */
-  /* Localisation */
   .middle-container a {
+    text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
+    color: black; /* Met le texte en noir */
+  }
+  /* Localisation */
+  .lien-localisation a {
     text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
     color: black; /* Met le texte en noir */
   }
@@ -1671,8 +1679,12 @@
     margin-left: 120px; /* Marge à gauche */
   }
   /* MAIN */
-  /* Localisation */
   .middle-container a {
+    text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
+    color: black; /* Met le texte en noir */
+  }
+  /* Localisation */
+  .lien-localisation a {
     text-decoration: none; /* Supprime la ligne (la barre) en dessous du lien */
     color: black; /* Met le texte en noir */
   }
