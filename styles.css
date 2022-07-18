@@ -343,11 +343,7 @@
     padding: 1rem;
   }
   .header__logo {
-    width: 20rem; /* Largeur du logo */
-    height: 40%; /* Hauteur du logo */
-    margin-top: 2rem; /* Marge en haut */
-    margin-left: 50rem; /* Margeà gauche */
-    margin-right: 50rem; /* Margeà droite*/
+    margin: 2rem 48rem;
   }
   /* MAIN */
   .middle-container a {
@@ -936,7 +932,7 @@
   /* FOOTER */
   .footer--page-menu {
     position: relative;
-    top: 37rem; /* Espace en haut */
+    top: 39rem; /* Espace en haut */
     background-color: #353535; /* Couleur de l'arrière plan du footer*/
     width: 100%; /* Largeur de l'arrière plan */
     height: 260px; /* Hauteur de l'arrière plan */
@@ -1008,10 +1004,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
   }
   .header__logo {
-    width: 20rem; /* Largeur du logo */
-    height: 40%; /* Hauteur du logo */
-    margin-top: 30px; /* Marge en haut */
-    margin-left: 19rem; /* Margeà gauche */
+    margin: 1rem 17rem;
   }
   /* MAIN */
   .middle-container a {
@@ -1588,7 +1581,7 @@
   /* FOOTER */
   .footer--page-menu {
     position: relative;
-    top: 77rem; /* Espace en haut */
+    top: 81rem; /* Espace en haut */
     background-color: #353535; /* Couleur de l'arrière plan du footer*/
     width: 100%; /* Largeur de l'arrière plan */
     height: 260px; /* Hauteur de l'arrière plan */
@@ -1763,7 +1756,7 @@
     height: 80px; /* Hauteur de la card */
     margin-left: 50px; /* Marge à gauche */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
-    border-radius: 30px; /* Bordure arrondie de 30 px */
+    border-radius: 20px; /* Bordure arrondie de 30 px */
     margin-top: 20px; /* Marge en haut */
   }
   .Container-Fonctionnement__card:hover {
@@ -1880,7 +1873,8 @@
     color: #038567; /* Couleur de l'éléments */
     font-weight: 800;
     /* Mixins : Texte => Bloc Nouveau vert en haut des images de restaurants */
-    font-family: "Roboto-Thin"; /* Police d'écriture */
+    font-family: "Roboto-Regular"; /* Police d'écriture */
+    font-weight: 900;
   }
   /* CARDS Ménilmontant + Charonne */
   .Restaurants__cards-body {

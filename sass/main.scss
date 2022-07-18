@@ -129,7 +129,7 @@
         height: 80px; /* Hauteur de la card */
         margin-left: 50px; /* Marge à gauche */
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
-        border-radius: 30px ; /* Bordure arrondie de 30 px */
+        border-radius: 20px ; /* Bordure arrondie de 30 px */
         margin-top: 20px; /* Marge en haut */
     }
     
@@ -223,7 +223,8 @@
     }
     .Restaurants__cards__container-nouveau p{
         @include Restaurants__cards-nouveau--texte (); /* Mixins : Texte => Bloc Nouveau vert en haut des images de restaurants */
-        font-family: $fonts-text; /* Police d'écriture */ 
+        font-family: "Roboto-Regular"; /* Police d'écriture */ 
+        font-weight: 900;
     }
         /* CARDS Ménilmontant + Charonne */
     .Restaurants__cards-body{

@@ -30,11 +30,7 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     }
     .header__logo{
-        width: 20rem; /* Largeur du logo */
-        height: 40%; /* Hauteur du logo */
-        margin-top: 30px; /* Marge en haut */
-        margin-left: 19rem; /* Margeà gauche */
-
+        margin: 1rem 17rem;
     }
 
     /* MAIN */
