@@ -29,8 +29,6 @@
     justify-content: space-between;
     width: 100%; /* Largeur */
     height: auto; /* Longueur */
-    padding-left: 1rem; /* Espace à gauche */
-    padding-right: 1rem; /* Espace à droite */
 }
 
     /* La créaction des Cards => Background color, etc.. */
@@ -61,7 +59,7 @@
     border-radius: 15px; /* Bordure arrondie de la cards  */
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
-    width: 57rem; /* Largeur de la card */
+    width: 28rem; /* Largeur de la card */
     height: 340px; /* Longueur de la card*/
     margin-top: 30px; /* Marge en haut qui sépare le titre activités à Marseille de la card */
 }
@@ -103,7 +101,7 @@
     width: 100px; /* Largeur de l'élément */
     height: 30px; /* Hauteur de l'élément */
     margin-top: -240px; /* Marge en haut */
-    margin-left: 50rem; /* Marge à gauche */
+    margin-left: 21rem; /* Marge à gauche */
     position: relative; /* Permet de mettre l'élément en position relative => parent */
 }
 
@@ -112,7 +110,6 @@
     text-align: center; /* Centre le texte */
     padding-top: 5px; /* Espace en haut */
     color: #038567; /* Couleur de l'éléments */
-    font-weight: 800;
 }
 
     /* Titres (Paragrpahes) + Icon Coeur */ 

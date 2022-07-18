@@ -183,7 +183,7 @@
         background-color: $background-grey-clair; /* Bakcground couleur */
         width: 100%; /* Largeur du container */
         height: 55rem; /* Hauteur du container */
-        margin-top: 80px; /* Marge en haut */
+        padding: 2rem 1rem; /* Espace en haut et en bas / Espace à droite et à gauche */
     }
     .Restaurants h3 {
         font-family: "Roboto-Regular"; /* Police d'écriture */
@@ -222,7 +222,8 @@
     }
     .Restaurants__cards__container-nouveau p{
         @include Restaurants__cards-nouveau--texte (); /* Mixins : Texte => Bloc Nouveau vert en haut des images de restaurants */
-        font-family: $fonts-text; /* Police d'écriture */ 
+        font-family: "Roboto-Regular"; /* Police d'écriture */ 
+        font-weight: 900; 
     }
         /* CARDS Ménilmontant + Charonne */
     .Restaurants__cards-body{
@@ -281,7 +282,6 @@
         padding: 30px; /* Met au milieu les listes */
         display: flex; /* Permet la propriété flexbox */
         flex-direction: column; /* Met les éléments en colonne */
-        margin-top: 46rem; /* Sépare footer et le main =< Espace en haut */
     }
     .footer__titre{
         color: white; /* Couleur Blanche */
