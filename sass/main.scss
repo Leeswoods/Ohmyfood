@@ -23,9 +23,37 @@
     src:url("Fonts/Roboto-Regular.ttf");
 }
 
+        /* PAGE LOADER */
+        .loader{
+            position: fixed; /* Même si sa scroll, le bloc restera la */
+            display: grid; /* Permet la propriété grid */
+            place-items: center; /* Met les éléments au centre */
+            background-color: white; /* Background color du bloc */
+            height: 100vh; /* Hauteur du bloc */
+            inset: 0; /* En globe top, right, bottom and left */
+            z-index: 1; /* Permet de mettre un élément sur un autre */
+            opacity: 0.9; /* Permet de voir en transparant / change l'opacité */
+            animation: disappear 200ms 3s forwards; /* Animation ! Nom / durée / délais / style de l'animation */
+            transform-origin: top; /* L'animation part vers le top */
+        }
+        .loader i{
+            color: #9356DC; /* Couleur icon */
+        }
+
+        /* ANIMATION PAGE LOADER */
+        @keyframes disappear {
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(0);
+            }
+        }
+
 
 /* Mobile */
 @media screen and (max-width: 768px){
+        
 
     /* GENERAL */
     *{
@@ -33,16 +61,6 @@
         margin: 0;
         box-sizing: border-box; /* Le containaire enfant ne peut pas partir du containaire parent */
     }
-    html, body{
-        width: 100%; /* Largeur minimale de la fenêtre */
-        height: 100vh; /* Hauteur minimale de la fenêtre */
-    }
-    body{
-        min-height: 100%;  /* hauteur minimale du container */
-        display: flex; /* Permet de mettre la propriété flexbox */
-        flex-direction: column; /* Permet de mettre toute les fenêtre en colonne */
-    }
-
 
     /* HEADER */
     .header__logo{

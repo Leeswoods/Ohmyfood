@@ -14,16 +14,6 @@
         margin: 0;
         box-sizing: border-box; /* Le containaire enfant ne peut pas partir du containaire parent */
     }
-    html, body{
-        width: 100%; /* Largeur minimale de la fenêtre */
-        height: 100vh; /* Hauteur minimale de la fenêtre */
-    }
-    body{
-        min-height: 100%;  /* hauteur minimale du container */
-        display: flex; /* Permet de mettre la propriété flexbox */
-        flex-direction: column; /* Permet de mettre toute les fenêtre en colonne */
-    }
-
 
     /* HEADER */
     header{
