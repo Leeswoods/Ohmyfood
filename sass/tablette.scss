@@ -51,7 +51,7 @@
         font-family: $fonts-text; /* Police d'écriture */
         font-size: 1.5rem; /* Taille de la police d'écriture */
         font-weight: bold; /* Met le texte en gras */
-        padding-right: 23rem; /* Espace à droite */
+        padding-right: 23.6rem; /* Espace à droite */
     }
     
             /* Réservation menu */
@@ -172,7 +172,7 @@
     .Restaurants{
         background-color: $background-grey-clair; /* Bakcground couleur */
         width: 100%; /* Largeur du container */
-        height: 55rem; /* Hauteur du container */
+        height: auto; /* Hauteur du container */
         padding: 2rem 1rem; /* Espace en haut et en bas / Espace à droite et à gauche */
         margin-top: 3rem; /* Marge en haut */
     }
