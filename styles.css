@@ -1636,7 +1636,7 @@
   height: 100vh; /* Hauteur du bloc */
   inset: 0; /* En globe top, right, bottom and left */
   z-index: 1; /* Permet de mettre un élément sur un autre */
-  opacity: 0.9; /* Permet de voir en transparant / change l'opacité */
+  /*opacity: 0.9; /* Permet de voir en transparant / change l'opacité */
   animation: disappear 200ms 3s forwards; /* Animation ! Nom / durée / délais / style de l'animation */
   transform-origin: top; /* L'animation part vers le top */
 }
