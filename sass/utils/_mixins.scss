@@ -18,8 +18,8 @@
     justify-content: space-between;
     width: 100%; /* Largeur */
     height: auto; /* Longueur */
-    padding-left: 100px; /* Espace à gauche */
-    padding-right: 100px; /* Espace à droite */
+    /*padding-left: 100px; /* Espace à gauche */
+    /*padding-right: 100px; /* Espace à droite */
 }
     /* VERSION TABLETTE => La propriété Flexbox => Disposition des Cards */
 @mixin Flex-Restaurants__mini-cards--tablette {
