@@ -340,12 +340,8 @@
   header {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
   }
-  /*
-  .header__logo{
-      margin: 2rem 48rem;
-  }*/
   .header__logo {
-    margin: 2rem 43rem;
+    margin: 2rem 48rem;
   }
   /* MAIN */
   .middle-container a {
@@ -497,7 +493,7 @@
     height: auto; /* Hauteur du container */
     /*margin-top: 80px; /* Marge en haut */
     /* margin-bottom: 3rem; /* Marge en bas */
-    padding: 2rem 3rem; /* Espace en haut et en bas / Espace à droite et à gauche */
+    padding: 2rem 1rem; /* Espace en haut et en bas / Espace à droite et à gauche */
   }
   .Restaurants h3 {
     font-family: "Roboto-Regular"; /* Police d'écriture */
@@ -509,7 +505,7 @@
   }
   .Restaurants__titre {
     padding-top: 50px; /* Espace en haut */
-    padding-left: 8px; /* Espece l'élément à gauche */
+    padding-left: 100px; /* Espece l'élément à gauche */
     font-size: 1.1rem; /* Taille d'écriture */
     font-family: "Roboto-Black"; /* Police d'écriture */
     font-weight: 500; /* Nuance de gras */
@@ -536,8 +532,8 @@
     justify-content: space-between;
     width: 100%; /* Largeur */
     height: auto; /* Longueur */
-    /*padding-left: 100px; /* Espace à gauche */
-    /*padding-right: 100px; /* Espace à droite */
+    padding-left: 100px; /* Espace à gauche */
+    padding-right: 100px; /* Espace à droite */
     /* Mixins : La propriété Flexbox => Disposition des Cards */
   }
   .Restaurants__cards-images {
