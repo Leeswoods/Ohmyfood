@@ -618,7 +618,7 @@
     background-clip: text; /* Définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu. */
     -webkit-background-clip: text; /* Si background clip ne marche pas */
     opacity: 0; /* Permet de pas voir la couleur */
-    transition: all 200ms ease-in-out; /* */
+    transition: all 2s ease-in-out; /* Transition */
   }
   .Restaurants__cards-body--icon:hover .fas {
     opacity: 1; /* Permet de voir la couleur */
@@ -1263,7 +1263,7 @@
     background-clip: text; /* Définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu. */
     -webkit-background-clip: text; /* Si background clip ne marche pas */
     opacity: 0; /* Permet de pas voir la couleur */
-    transition: all 200ms ease-in-out; /* */
+    transition: all 2s ease-in-out; /* Transition */
   }
   .Restaurants__cards-body--icon:hover .fas {
     opacity: 1; /* Permet de voir la couleur */
@@ -1929,7 +1929,7 @@
     background-clip: text; /* Définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu. */
     -webkit-background-clip: text; /* Si background clip ne marche pas */
     opacity: 0; /* Permet de pas voir la couleur */
-    transition: all 2s ease-in-out; /* */
+    transition: all 2s ease-in-out; /* Transition */
   }
   .Restaurants__cards-body--icon:hover .fas {
     opacity: 1; /* Permet de voir la couleur */
