@@ -6,8 +6,8 @@
     flex-direction: column; /* Permet de mettre les éléments en colonne */
     width: 100%; /* Largeur */
     height: auto; /* Longueur */
-    padding-left: 15px; /* Permet de centre l'élément */
-    padding-right: 15px; /* Permet de centre l'élément */
+    padding-left: 1rem; /* Permet de centre l'élément */
+    padding-right: 1rem; /* Permet de centre l'élément */
 }
 
     /* VERSION DESKTOP => La propriété Flexbox => Disposition des Cards */
@@ -82,7 +82,7 @@
     width: 100px; /* Largeur de l'élément */
     height: 30px; /* Hauteur de l'élément */
     margin-top: -240px; /* Marge en haut */
-    margin-left: 340px; /* Marge à gauche */
+    margin-left: 305px; /* Marge à gauche */
     position: relative; /* Permet de mettre l'élément en position relative => parent */
 }
     /* VESION DESKTOP => Bloc Nouveau vert en haut des images de restaurants */
