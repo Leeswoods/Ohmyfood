@@ -37,7 +37,7 @@
     .localisation-restaurant{
         display: flex; /* Propriété Flexbox */
         flex-direction: row; /* Met les éléments sur la même ligne */
-        justify-content: space-between; /* Espace entre les éléments */
+        /*justify-content: space-between; /* Espace entre les éléments */
         background-color: $background-grey; /* Bakcground couleur */
         margin-top: 5px; /* Marge en haut */
         padding : 20px; /* Espace => taille du bloc */
@@ -51,7 +51,8 @@
         font-family: $fonts-text; /* Police d'écriture */
         font-size: 1.5rem; /* Taille de la police d'écriture */
         font-weight: bold; /* Met le texte en gras */
-        padding-right: 23.6rem; /* Espace à droite */
+       /* padding-right: 23.6rem; /* Espace à droite */
+       padding-left: 1rem; /* Espace à droite */
     }
     
             /* Réservation menu */
