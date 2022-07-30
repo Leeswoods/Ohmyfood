@@ -67,7 +67,7 @@
         width: 50%; /* Largeur du logo */
         height: 50%; /* Hauteur du logo */
         margin-top: 30px; /* Marge en haut */
-        margin-left: 120px; /* Marge à gauche */
+        margin-left: 6rem; /* Marge à gauche */
     }
 
     /* MAIN */
@@ -84,21 +84,21 @@
     .localisation-restaurant{
         display: flex; /* Propriété Flexbox */
         flex-direction: row; /* Met les éléments sur la même ligne */
-        justify-content: space-between; /* Espace entre les éléments */
+        /*justify-content: space-between; /* Espace entre les éléments */
         background-color: $background-grey; /* Bakcground couleur */
         margin-top: 5px; /* Marge en haut */
         padding : 20px; /* Espace => taille du bloc */
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     }
     .localisation-restaurant__icon{
-        padding-left: 120px; /* Espace en haut */
+        padding-left: 70px; /* Espace en haut */
         padding-top: 12px; /* Espace à gauche */
     }
     .localisation-restaurant__texte{
         font-family: $fonts-text; /* Police d'écriture */
         font-size: 22px; /* Taille de la police d'écriture */
         font-weight: bold; /* Met le texte en gras */
-        padding-right: 155px; /* Espace à droite */
+        padding-left: 20px; /* Espace à droite */
     }
     
             /* Réservation menu */
@@ -106,8 +106,8 @@
         background-color: $background-grey-clair; /* Bakcground couleur */
         width: 100%; /* Largueur du contenaire */ 
         height: 300px; /* Longueur du contenaire */ 
-        padding-left: 50px; /* Espace à gauche */
-        padding-right: 50px; /* Espace à droite */
+        padding-left: 22px; /* Espace à gauche */
+        padding-right: 22px; /* Espace à droite */
         text-align: center; /* Met le bloc au cente */
     }
     .Réservation__titre{
@@ -117,7 +117,7 @@
     }
     .Réservation__texte{
         padding-top: 20px; /* Espace en haut */
-        font-size: 22px; /* Taille du texte */
+        font-size: 18px; /* Taille du texte */
         font-family: "Roboto-Regular"; /* Police d'écriture */
     }
     .Réservation__button-recherche{
