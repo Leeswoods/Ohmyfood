@@ -61,6 +61,9 @@
         margin: 0;
         box-sizing: border-box; /* Le containaire enfant ne peut pas partir du containaire parent */
     }
+    body{
+        width: 124%;
+    }
 
     /* HEADER */
     .header__logo{
