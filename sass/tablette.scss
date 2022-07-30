@@ -206,7 +206,7 @@
         @include Flex-Restaurants__mini-cards--tablette  (); /* Mixins : La propriété Flexbox => Disposition des Cards */
     }
     .Restaurants__cards-images{
-        @include Restaurants__cards-images (); /* Mixins : Images des minis cards Restaurants */
+        @include Restaurants__cards-images--tablette (); /* Mixins : Images des minis cards Restaurants */
     }
     .card-nouveau-tablette{
         @include Restaurants__cards-nouveau--tablette  (); /* Mixins : Bloc Nouveau vert en haut des images de restaurants */

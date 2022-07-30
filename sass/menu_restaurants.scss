@@ -41,14 +41,14 @@
     .header__logo--menu-restaurants{
         width: 50%; /* Largeur du logo */
         height: 50%; /* Hauteur du logo */
-        margin-top: 30px; /* Marge en haut */
-        margin-left: 120px; /* Marge à gauche */
+        margin-top: 15px; /* Marge en haut */
+        margin-left: 88px; /* Marge à gauche */
         position: relative; /* Permet de mettre en Position relative => parent*/
     }
     .fa-arrow-left{
         position: absolute; /* Permet de mettre en Position absolute => enfant */
-        left: 20px; /* Marge à gauche */
-        top: 50px; /* Marge en haut */
+        left: 13px; /* Marge à gauche */
+        top: 32px; /* Marge en haut */
         color: black; /* Couleur */
     }
 
@@ -70,7 +70,7 @@
         width: 100%; /* Largeur de l'élément */
         height: auto; /* Hauteur de l'élément */
         position: absolute; /* Permet de mettre en Position absolute => enfant */
-        top: 350px; /* Déplace l'élément en haut */
+        top: 257px; /* Déplace l'élément en haut */
         border-top-left-radius: 50px; /* Bordure arrondie à gauche de l'image */
         border-top-right-radius: 50px; /* Bordure arrondie à droite de l'image */
     }
@@ -83,6 +83,9 @@
     .main__titre-icon h1{
         font-family: $fonts-title ;/* FONTS TITRE + LOGO */
         font-weight: 100; /* Nuance de gras */
+    }
+    .titre_main_h1{
+        font-size: 1.5rem;
     }
     .main__titre-icon--coeur i{
         @include card-coeur-restaurants (); /* Mixins : ICON COEUR PAGE MENU */
@@ -178,6 +181,9 @@
         padding-right: 20px; /* Epace à droite */
         padding-top: 15px; /* Epace en haut */
         padding-bottom: 5px; /* Epace en bas */
+        overflow: hidden; /* Permet de cacher => fait disparaître le container check */
+        text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
+        white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
     }
     .main__menu-cards--description{
         font-size: 16px; /* Taille d'écriture */
@@ -231,8 +237,8 @@
     .button-commander-design{
         padding-top: 50px; /* Epace en haut */
         padding-bottom: 130px; /* Epace en bas */
-        padding-left: 120px; /* Epace à gauche */
-        padding-right: 120px; /* Epace à droite */
+        padding-left: 60px; /* Epace à gauche */
+        padding-right: 60px; /* Epace à droite */
     }
     .button-commander{
         @include gradient-bouton (); /* Mixins : Bakcground couleur dégradé */

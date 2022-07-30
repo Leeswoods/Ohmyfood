@@ -38,7 +38,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
     width: 100%; /* Largeur de la card */
-    height: 340px; /* Longueur de la card*/
+    height: 234px; /* Longueur de la card*/
     margin-top: 30px; /* Marge en haut qui sépare le titre activités à Marseille de la card */
 }
 
@@ -69,20 +69,41 @@
     /* Images des minis cards Restaurants */
 @mixin Restaurants__cards-images {
     width: 100%; /* Largeur de l'image' */
-    height: 253px; /* Longueur de l'image' */
+    height: 161px; /* Longueur de l'image' */
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    border-top-left-radius: 15px; /* Bordure arrondie à gauche de l'image */
+    border-top-right-radius: 15px; /* Bordure arrondie à droite de l'image */
+    margin-top: 0px; /* Colle l'image côté haut */
+}
+/* VESION DESKTOP => Image mini card */
+@mixin Restaurants__cards-images--desktop {
+    width: 100%; /* Largeur de l'image' */
+    height: 250px; /* Longueur de l'image' */
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    border-top-left-radius: 15px; /* Bordure arrondie à gauche de l'image */
+    border-top-right-radius: 15px; /* Bordure arrondie à droite de l'image */
+    margin-top: 0px; /* Colle l'image côté haut */
+}
+/* VESION Tablette => Image mini card */
+@mixin Restaurants__cards-images--tablette {
+    width: 100%; /* Largeur de l'image' */
+    height: 247px; /* Longueur de l'image' */
     object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
     border-top-left-radius: 15px; /* Bordure arrondie à gauche de l'image */
     border-top-right-radius: 15px; /* Bordure arrondie à droite de l'image */
     margin-top: 0px; /* Colle l'image côté haut */
 }
 
+
+
+
     /* Bloc Nouveau vert en haut des images de restaurants */
 @mixin Restaurants__cards-nouveau {
     background-color: #99E2D0; /* Couleur en arrière plan de la card */
     width: 100px; /* Largeur de l'élément */
-    height: 30px; /* Hauteur de l'élément */
-    margin-top: -240px; /* Marge en haut */
-    margin-left: 305px; /* Marge à gauche */
+    height: 26px; /* Hauteur de l'élément */
+    margin-top: -152px; /* Marge en haut */
+    margin-left: 218px; /* Marge à gauche */
     position: relative; /* Permet de mettre l'élément en position relative => parent */
 }
     /* VESION DESKTOP => Bloc Nouveau vert en haut des images de restaurants */

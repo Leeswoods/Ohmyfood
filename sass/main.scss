@@ -61,16 +61,13 @@
         margin: 0;
         box-sizing: border-box; /* Le containaire enfant ne peut pas partir du containaire parent */
     }
-    body{
-        width: 124%;
-    }
 
     /* HEADER */
     .header__logo{
         width: 50%; /* Largeur du logo */
         height: 50%; /* Hauteur du logo */
         margin-top: 30px; /* Marge en haut */
-        margin-left: 7rem; /* Marge à gauche */
+        margin-left: 6rem; /* Marge à gauche */
     }
 
     /* MAIN */
@@ -94,7 +91,7 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     }
     .localisation-restaurant__icon{
-        padding-left: 107px; /* Espace en haut */
+        padding-left: 66px; /* Espace en haut */
         padding-top: 12px; /* Espace à gauche */
     }
     .localisation-restaurant__texte{
@@ -120,7 +117,7 @@
     }
     .Réservation__texte{
         padding-top: 20px; /* Espace en haut */
-        font-size: 22px; /* Taille du texte */
+        font-size: 18px; /* Taille du texte */
         font-family: "Roboto-Regular"; /* Police d'écriture */
     }
     .Réservation__button-recherche{
@@ -146,9 +143,10 @@
     }
     .Container-Fonctionnement__card{
         background-color: #F6F6F6; /* Bakcground couleur */
-        width: 400px; /* Largeur de la card */
+        width: 324px; /* Largeur de la card */
         height: 80px; /* Hauteur de la card */
-        margin-left: 36px; /* Marge à gauche */
+       /* margin-left: 36px; /* Marge à gauche */
+       margin-left: 25px; /* Marge à gauche */
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
         border-radius: 20px ; /* Bordure arrondie de 30 px */
         margin-top: 20px; /* Marge en haut */
@@ -178,7 +176,7 @@
         margin-left: -10px; /* Marge qui sépare l'icone du texte */
     }
     .Fonctionnement__Icon-logo{
-        margin-left: -20px; /* Marge à gauche */
+        margin-left: -3px; /* Marge à gauche */
         color: gray; /* Couleur de l'îcone */
     }
         /* Lien Passage de la souris */
@@ -187,7 +185,7 @@
     }
     
     .Fonctionnement__texte-card{
-        padding-right: 80px; /* Espace à droite */
+        padding-right: 18px; /* Espace à droite */
         font-size: 20px; /* Taille du texte */
         font-weight: 600; /* Met le texte en gras */
         font-family: "Roboto-Regular"; /* Police d'écriture */
@@ -195,11 +193,11 @@
     
         /* Fonctionnement Menu => Composition Card */
     .Composition-texte-card{
-        padding-right: 95px; /* Espace à droite */
+        padding-right: 38px; /* Espace à droite */
     }
     /* Fonctionnement Menu => Dégustation Card */
     .Dégustation-texte-card{
-        padding-right: 90px; /* Espace à droite */
+        padding-right: 34px; /* Espace à droite */
     }
     
     
@@ -207,7 +205,7 @@
     .Restaurants{
         background-color: $background-grey-clair; /* Bakcground couleur */
         width: 100%; /* Largeur du container */
-        height: 1700px; /* Hauteur du container */
+        height: 74rem; /* Hauteur du container */
         margin-top: 80px; /* Marge en haut */
     }
     .Restaurants h3 {
@@ -249,7 +247,7 @@
     }
         /* CARDS Ménilmontant + Charonne */
     .Restaurants__cards-body{
-        margin-top: 220px; /* Marge en haut */
+        margin-top: 129px; /* Marge en haut */
         font-family: $fonts-text; /* Police d'écriture */ 
         @include card-titres-texte (); /* Mixins : Body titres + texte */
     }
