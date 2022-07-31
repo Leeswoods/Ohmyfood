@@ -20,7 +20,9 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     }
     .header__logo{
-        margin: 2rem 42rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-left: 39%;
     }
 
     /* MAIN */
@@ -46,8 +48,8 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Ajoute des ombres à la boîte d'un élément : Première valeur Le décalage horizontal de l'ombre. Deuxième Valeur Le décalage vertical de l'ombre. La troisième valeur L'adoucissement du dégradé. */
     }
     .localisation-restaurant__icon{
-        padding-left: 47rem; /* Espace en haut */
-        padding-top: 13px; /* Espace à gauche */
+        padding-left: 44%; /* Espace à gauche */
+        padding-top: 13px; /* Espace en haut */
     }
     .localisation-restaurant__texte{
         font-family: $fonts-text; /* Police d'écriture */
