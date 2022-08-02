@@ -785,6 +785,9 @@
     height: auto; /* Hauteur de l'élément */
     padding-top: 40px; /* Epace en haut */
     padding-left: 30px; /* Epace à gauche */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .main__menu a {
     text-decoration: none; /* Fait disparaître l'aspect lien (la barre bleu) */
@@ -856,6 +859,9 @@
     padding-right: 20px; /* Epace à droite */
     padding-top: 15px; /* Epace en haut */
     padding-bottom: 5px; /* Epace en bas */
+    overflow: hidden; /* Permet de cacher => fait disparaître le container check */
+    text-overflow: ellipsis; /* Si pas d'espace alors le texte se met en "..." => La propriété text-overflow définit la façon dont le contenu textuel qui dépasse d'une boîte est signalé pour les utilisateurs */
+    white-space: nowrap; /* Les passages à la ligne automatiques sont supprimés. */
   }
   .main__menu-cards--description {
     font-size: 16px; /* Taille d'écriture */
