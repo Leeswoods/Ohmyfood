@@ -507,7 +507,7 @@
   }
   .Restaurants__titre {
     padding-top: 50px; /* Espace en haut */
-    /*padding-left: 100px; /* Espece l'élément à gauche */
+    padding-left: 5rem; /* Espece l'élément à gauche */
     font-size: 1.1rem; /* Taille d'écriture */
     font-family: "Roboto-Black"; /* Police d'écriture */
     font-weight: 500; /* Nuance de gras */
@@ -534,8 +534,8 @@
     justify-content: space-between;
     width: 100%; /* Largeur */
     height: auto; /* Longueur */
-    /*padding-left: 100px; /* Espace à gauche */
-    /* padding-right: 100px; /* Espace à droite */
+    padding-left: 5rem; /* Espace à gauche */
+    padding-right: 5rem; /* Espace à droite */
     /* Mixins : La propriété Flexbox => Disposition des Cards */
   }
   .Restaurants__cards-images {
